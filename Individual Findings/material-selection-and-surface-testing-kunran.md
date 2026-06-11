@@ -1,4 +1,4 @@
-# Kunran_SOLARSAFE_findings
+# Material selection and surface testing for SOLARSAFE drying bags
 
 Article by **Kunran Cui**
 
@@ -116,11 +116,11 @@ The way I used this paper in the project was:
 This literature review helped move the project away from choosing plastics only based on price or availability. It showed that the surface and storage behaviour of the material could matter for food safety, and this became one of the reasons our final material shortlist focused on PP, PVC and Nylon rather than including LDPE.
 
 
-## Experiment 1: maize-bag CO2 and moisture monitoring
+## Experiment 1: maize-bag headspace study — humidity, CO2 and temperature monitoring
 
 ### Objective
 
-This experiment tested whether different plastic bag materials create different internal conditions when maize is enclosed inside them. This mattered because material choice is not only about chemical resistance. A plastic that survives cleaning may still be unsuitable if it traps moisture, encourages condensation, or creates high-respiration conditions.
+This experiment tested whether different plastic bag materials create different internal conditions when maize is enclosed inside them. This mattered because the SOLARSAFE bag is intended to support drying, not simply storage. If moisture builds up in the headspace, the bag may create a humid microclimate around the maize instead of helping it dry.
 
 The tested bags were:
 
@@ -128,52 +128,101 @@ The tested bags were:
 
 The main measurements were:
 
+* relative humidity inside the bag;
 * CO2 level inside the bag;
-* humidity inside the bag;
-* moisture content of the maize cobs.
+* moisture content of the maize cobs;
+* temperature inside the bag.
+
+The central question was not only which plastic is chemically stable, but also which plastic is less likely to trap moisture and gas during drying.
 
 ### Setup
 
-We prepared three bags: one PP bag, one PVC bag and one Nylon bag. Each bag contained two maize cobs. A combined CO2 and humidity sensor was placed inside each bag. We also used a separate moisture-measurement device with probes that could be inserted into the maize.
+We prepared three bags: one PP bag, one PVC bag and one Nylon bag. Each bag contained two maize cobs. A combined CO2 and humidity sensor was placed inside each bag. We also used a separate moisture-measurement device with probes that could be inserted directly into the maize.
 
-For each maize cob, we took four moisture readings. This was important because moisture can vary locally within the cob, so a single reading would not be reliable enough.
-
-After placing the maize and sensor inside each bag, we sealed the bags carefully with tape. Particular attention was given to the interface around the sensor and the bag opening, because leakage at this point would affect the CO2 and humidity readings. Although this was a small-scale laboratory setup, we tried to make the sealing method consistent across PP, PVC and Nylon.
+For each maize cob, we took four moisture readings. This was important because moisture can vary locally within the cob, so a single reading would not be reliable enough. After placing the maize and sensor inside each bag, we sealed the bags carefully with tape. Particular attention was given to the interface around the sensor and the bag opening, because leakage at this point would affect the CO2 and humidity readings. Although this was a small-scale laboratory setup, we tried to make the sealing method consistent across PP, PVC and Nylon.
 
 Recommended supporting files:
 
 ```text
 figures/maize_bag_setup.png
+figures/headspace_humidity_by_material.png
+figures/headspace_humidity_change.png
+figures/headspace_co2_after_opening.png
 data/maize_bag_experiment/raw_readings.csv
 data/maize_bag_experiment/moisture_summary.csv
 ```
 
 ### Measurement timeline
 
-On Day 0, we took two readings:
+The internal headspace was monitored from Day 0 to Day 4. On Day 0, we took two readings, one at approximately 11 a.m. and one at approximately 1 p.m. This allowed us to see how quickly the internal environment changed within the first two hours after sealing. We then returned on later days and continued measuring moisture and sensor readings. The bags were opened on Day 3, which provided a useful comparison between sealed and vented conditions.
 
-* approximately 11 a.m.;
-* approximately 1 p.m.
+The Day 3 opening should be treated as an intervention rather than a normal sealed-bag reading. It was useful because it showed whether the accumulated moisture and CO2 could be released by ventilation.
 
-This allowed us to see how quickly the internal environment changed within the first two hours after sealing. We then returned on later days and continued measuring moisture and sensor readings. The intended comparison points were Day 0, Day 2, Day 3 and Day 4.
+### Humidity results
 
-### Observations
+The clearest result was the rapid rise in relative humidity in every bag:
 
-The first important observation was that the CO2 level increased very quickly. The readings rose above the upper measurement limit of the sensor, which was 9999 ppm. This meant we could not measure the final maximum CO2 concentration. We only knew that it exceeded the sensor range shortly after sealing.
+| Material | Initial relative humidity | Peak relative humidity before opening | Increase from initial to peak | Relative humidity after opening on Day 3 | Drop after opening |
+|---|---:|---:|---:|---:|---:|
+| PP | 61.3% | 96.7% | +35.4 percentage points | 87.8% | -8.9 percentage points |
+| PVC | 66.8% | 88.5% | +21.7 percentage points | 66.5% | -22.0 percentage points |
+| Nylon | 56.2% | 94.1% | +37.9 percentage points | 67.5% | -26.6 percentage points |
 
-The second important observation was that humidity also increased rapidly. Even within the two-hour interval on Day 0, humidity rose noticeably inside the enclosed bags.
+![Headspace humidity by material](../figures/headspace_humidity_by_material.png)
 
-These observations were useful even though the sensor range was limited. They showed that sealing maize inside plastic bags can quickly create a high-humidity, high-CO2 environment. This does not directly prove Aspergillus flavus growth, because CO2 can come from general biological respiration and we did not perform fungal identification. However, it does show that gas and moisture behaviour should be considered when selecting bag materials.
+This is an important result for SOLARSAFE. The maize cobs were releasing moisture, but in a sealed bag that moisture accumulated in the headspace instead of escaping. A drying bag should remove moisture from the maize environment; a sealed bag of any of these polymers risks doing the opposite by creating a near-saturated microclimate.
+
+The material ranking was also informative. PP reached the highest humidity at **96.7%**, Nylon reached **94.1%**, and PVC reached the lowest peak humidity at **88.5%**. PVC's peak humidity was **8.2 percentage points lower than PP** and **5.6 percentage points lower than Nylon**. This suggests that, under our setup, PVC allowed slightly more moisture exchange than PP and Nylon, or at least accumulated less water vapour in the headspace.
+
+The Day 3 opening was especially useful. After the bags were opened, humidity fell from **88.5% to 66.5%** in PVC and from **94.1% to 67.5%** in Nylon. PP also fell, but only from **96.7% to 87.8%**, meaning it remained very humid even after ventilation. This is consistent with PP behaving as the most moisture-trapping bag in our experiment.
+
+![Humidity build-up and drop after opening](../figures/headspace_humidity_change.png)
+
+The key conclusion from the humidity data is that moisture leaves the headspace only when there is an escape path. Passive sealing alone does not dry the maize. Therefore, SOLARSAFE needs ventilation, breathable panels, controlled opening, or a solar-driven airflow path so that evaporated water is carried out rather than trapped around the maize.
+
+### CO2 results
+
+CO2 also rose in all bags. This was likely driven by respiration from the maize and possibly by general biological activity. It should not be interpreted as direct evidence of Aspergillus flavus growth, because we did not perform fungal identification. However, it is still a useful indicator that the internal atmosphere of the sealed bags changed quickly.
+
+PP and Nylon reached the sensor ceiling of **9999 ppm within 24 hours**. PVC accumulated CO2 more slowly and saturated later, which is consistent with PVC allowing slightly more gas exchange than PP and Nylon under our test conditions. After opening, PP retained much more CO2 than the other materials:
+
+| Material | CO2 behaviour before opening | CO2 after opening | Comparison after opening |
+|---|---|---:|---|
+| PP | Reached sensor ceiling of 9999 ppm within 24 hours | 2396 ppm | Highest retained CO2 |
+| PVC | Rose more slowly and saturated later | 994 ppm | 1402 ppm lower than PP |
+| Nylon | Reached sensor ceiling of 9999 ppm within 24 hours | 834 ppm | 1562 ppm lower than PP |
+
+![CO2 after opening bags on Day 3](../figures/headspace_co2_after_opening.png)
+
+The post-opening CO2 values show the same broad pattern as humidity. PP retained the most gas after opening: **2396 ppm**, compared with **994 ppm** for PVC and **834 ppm** for Nylon. This means PP retained about **2.4 times** as much CO2 as PVC and about **2.9 times** as much CO2 as Nylon after opening.
+
+The sensor ceiling is an important limitation. Because PP and Nylon exceeded **9999 ppm**, we cannot know their true maximum CO2 values. The correct conclusion is therefore not that their maximum was exactly 9999 ppm, but that they reached at least that value and exceeded the instrument range. A higher-range CO2 sensor would be needed for a stronger follow-up experiment.
+
+The combination of high humidity and high CO2 is concerning for a drying application. It suggests a stagnant, moisture-rich headspace rather than an actively drying environment. For SOLARSAFE, this confirms that the bag should not be designed as a fully sealed container during the drying stage.
+
+### Temperature results
+
+Temperature was not a useful differentiator in this experiment. Across the measurements, it stayed approximately within **20.3--21.7 °C**, giving a spread of less than **1.5 °C**. There was no clear material-to-material temperature difference. The main headspace differences were therefore humidity and CO2, not temperature.
+
+This is useful because it means the humidity and CO2 differences are unlikely to be explained simply by one bag being much warmer than the others. Instead, they are more likely related to moisture and gas retention behaviour.
 
 ### Interpretation
 
-The moisture readings from the maize cobs are particularly important because they show whether the maize itself is drying or retaining water. Comparing the Day 0, Day 2, Day 3 and Day 4 readings across PP, PVC and Nylon should help future teams judge whether one material creates better drying conditions.
+This experiment changed how I interpreted the material problem. A material that is chemically stable is not automatically suitable for drying. If the bag traps water vapour and CO2, it can create the damp, stagnant conditions that SOLARSAFE is trying to avoid.
 
-A material should not simply seal the crop. It should support controlled drying. If the material traps moisture too strongly, it may create condensation or maintain conditions associated with higher aflatoxin risk.
+The main design conclusion is:
+
+> **Bag material alone does not solve drying; ventilation does.**
+
+All three polymers built a humid, CO2-rich microclimate when sealed. PP and Nylon appeared more airtight and therefore trapped moisture and gas more strongly. PVC had the lowest peak humidity and slower CO2 accumulation, which supports keeping it as the lead material for the current prototype direction. However, even PVC still reached high humidity, so it should not be used as a fully sealed drying bag without an engineered moisture-escape path.
+
+This is why the final material recommendation should be read together with a design recommendation. PVC is the best current candidate among the tested materials, but the bag should include vents, a breathable section, controlled opening, or a solar-driven airflow/chimney effect. Without this, any plastic bag risks acting more like an incubation chamber than a dryer.
 
 ### Limitations
 
-The main limitation was that the CO2 sensor saturated at 9999 ppm, so the true maximum concentration could not be measured. The sealing method also relied on tape, which may not represent a manufactured drying bag. In addition, each bag contained only two maize cobs, so more replicates would be needed before drawing a strong material conclusion.
+The main limitation was that the CO2 sensor saturated at **9999 ppm**, so the true maximum concentration could not be measured. The sealing method also relied on tape, which may not represent a manufactured drying bag. In addition, each bag contained only two maize cobs, so more replicates would be needed before drawing a strong material conclusion. The Day 3 opening was useful as a ventilation check, but it also means the later readings should be interpreted as post-intervention values rather than purely sealed-bag behaviour.
+
+Another limitation is that the current figures use summary values rather than full time-series data. The repository should therefore include the raw Day 0--Day 4 readings so future teams can replot the curves and calculate rates of humidity and CO2 build-up.
 
 ### Future improvements
 
@@ -184,18 +233,23 @@ Future teams should repeat the experiment with:
 * standardised bag size, maize mass and sensor position;
 * simultaneous temperature measurement;
 * sealed, partially ventilated and open-control conditions;
-* sunlight or simulated solar-dryer conditions.
+* a controlled vent or breathable panel to compare against fully sealed bags;
+* sunlight or simulated solar-dryer conditions;
+* full time-series logging so that humidity and CO2 build-up rates can be calculated rather than only compared using summary values.
 
 Suggested data table:
 
-| Material | Day/time       | CO2                    | Humidity | Maize moisture | Observation |
-| -------- | -------------- | ---------------------- | -------- | -------------- | ----------- |
-| PP       | Day 0, 11 a.m. | Insert                 | Insert   | Insert         | Insert      |
-| PP       | Day 0, 1 p.m.  | >9999 ppm if saturated | Insert   | Insert         | Insert      |
-| PVC      | Day 0, 11 a.m. | Insert                 | Insert   | Insert         | Insert      |
-| PVC      | Day 0, 1 p.m.  | >9999 ppm if saturated | Insert   | Insert         | Insert      |
-| Nylon    | Day 0, 11 a.m. | Insert                 | Insert   | Insert         | Insert      |
-| Nylon    | Day 0, 1 p.m.  | >9999 ppm if saturated | Insert   | Insert         | Insert      |
+| Material | Day/time | CO2 | Humidity | Maize moisture | Observation |
+|---|---|---|---|---|---|
+| PP | Day 0, initial | Insert | 61.3% | Insert | Initial reading |
+| PP | Peak before opening | >9999 ppm if saturated | 96.7% | Insert | Highest humidity among tested bags |
+| PP | After opening | 2396 ppm | 87.8% | Insert | Retained most CO2 and remained very humid |
+| PVC | Day 0, initial | Insert | 66.8% | Insert | Initial reading |
+| PVC | Peak before opening | Insert / saturated later | 88.5% | Insert | Lowest peak humidity |
+| PVC | After opening | 994 ppm | 66.5% | Insert | Large humidity drop after ventilation |
+| Nylon | Day 0, initial | Insert | 56.2% | Insert | Initial reading |
+| Nylon | Peak before opening | >9999 ppm if saturated | 94.1% | Insert | High humidity and rapid CO2 saturation |
+| Nylon | After opening | 834 ppm | 67.5% | Insert | Large humidity drop after ventilation |
 
 ## Experiment 2: sodium hypochlorite exposure and surface analysis
 
@@ -323,14 +377,19 @@ The current recommendation is:
 | Criterion | PP | PVC | Nylon |
 |---|---|---|---|
 | NaOCl resistance, 3 days | No detectable chemical degradation in ATR-FTIR; no visible surface damage in microscopy | No detectable chemical degradation in ATR-FTIR; no visible surface damage in microscopy | No detectable degradation markers, but ATR-FTIR signal was weaker/noisier |
+| Humidity behaviour in maize-bag test | Highest peak humidity, 96.7% | Lowest peak humidity, 88.5% | High peak humidity, 94.1% |
+| CO2 behaviour in maize-bag test | Reached 9999 ppm within 24 hours and retained most CO2 after opening | Accumulated more slowly and had lower post-opening CO2 than PP | Reached 9999 ppm within 24 hours |
 | Material integrity | Stable candidate, light and practical | Strong and transparent; long-term ageing and food-contact grade should be checked | Tough, but may absorb moisture |
 | Practicality | Low-cost and strong comparator | Transparent and directly relevant to the current partner design | Heavier/costlier and less straightforward for moisture control |
 | Recommendation | Strong comparator | **Best current candidate** | More testing needed |
 
-PVC is recommended because it combines short-term sodium hypochlorite compatibility with strong transparency and direct relevance to the current partner design. Transparency is important for a drying bag because it supports solar drying and allows visual inspection of the maize. PP remains a strong comparator because it also showed no detectable chemical or visible surface damage under our sodium hypochlorite test and has advantages in cost, low moisture uptake and food-contact practicality. Nylon requires further testing before it can be recommended.
+PVC is recommended because it combines short-term sodium hypochlorite compatibility with strong transparency, direct relevance to the current partner design, and the best headspace result among the three materials tested. In the maize-bag experiment, PVC reached the lowest peak humidity and accumulated CO2 more slowly than PP and Nylon, suggesting that it may be less prone to trapping moisture and gas when used in a drying context.
 
-This recommendation should not be treated as a final field-certified material choice. It is a first-stage material screen that gives the partner and future teams a practical starting point. Before field adoption, the next team should verify PVC grade, food-contact suitability, plasticiser formulation, long-term sunlight ageing, mechanical durability and moisture behaviour under realistic drying conditions.
+PP remains a strong comparator because it also showed no detectable chemical or visible surface damage under sodium hypochlorite exposure and has advantages in cost, low moisture uptake and food-contact practicality. However, in the sealed maize-bag experiment PP trapped the most humidity and retained the most CO2 after opening, which is a disadvantage for drying unless ventilation is engineered into the bag. Nylon requires further testing because of weaker ATR-FTIR signal quality, high humidity build-up and its moisture absorption concern.
 
+This recommendation should not be treated as a final field-certified material choice. It is a first-stage material screen that gives the partner and future teams a practical starting point. The maize-bag result also makes one design requirement very clear: even with PVC, SOLARSAFE should not rely on a fully sealed drying bag. The next prototype should include an engineered moisture-escape path, such as vents, breathable panels, controlled opening, or solar-driven airflow.
+
+Before field adoption, the next team should verify PVC grade, food-contact suitability, plasticiser formulation, long-term sunlight ageing, mechanical durability and moisture behaviour under realistic drying conditions.
 
 ## Repository handover
 
@@ -418,8 +477,9 @@ references/literature_review_table.md
 * The project narrowed a broad aflatoxin-control problem into a specific material-selection question.
 * The recommendation is based on partner needs, expert feedback, literature evidence and laboratory testing.
 * The literature review helped justify why LDPE was removed from the first experimental shortlist rather than simply choosing materials based on availability.
-* The maize-bag experiment showed that internal humidity and CO2 can rise quickly after sealing, so material choice should be evaluated together with ventilation and drying behaviour.
+* The maize-bag experiment produced a clear headspace result: all sealed bags became humid and CO2-rich, but PVC had the lowest peak humidity and slower CO2 accumulation than PP and Nylon.
 * The plastic-lab work included both ATR-FTIR spectroscopy and microscope observation, giving a stronger first screen than visual inspection alone.
+* The humidity drop after opening the bags showed that ventilation is essential; material choice should be evaluated together with airflow design, not in isolation.
 * The ATR-FTIR analysis checked the relevant diagnostic regions for oxidation, hydrolysis and PVC-specific degradation, rather than relying only on visual appearance.
 * The report and repository structure give future teams a clear starting point.
 
@@ -432,6 +492,7 @@ references/literature_review_table.md
 * The profilometer was unavailable, so surface roughness and pitting could not be quantified.
 * The microscope images were mainly qualitative and did not show clear surface differences.
 * The CO2 sensor saturated at 9999 ppm, so the true maximum CO2 concentration inside the maize bags could not be measured.
+* The bags were opened on Day 3, so later humidity and CO2 readings should be interpreted as post-ventilation values rather than purely sealed-bag behaviour.
 * No direct aflatoxin-retention experiment was performed.
 * The literature reviewed was mainly from nuts, dried fruits and peanuts rather than maize, so it should be treated as screening evidence rather than direct proof for SOLARSAFE.
 * Nylon results were less conclusive because of the weaker ATR-FTIR signal and its moisture absorption concern.
@@ -447,23 +508,18 @@ Future teams should:
 4. perform folding, puncture, tensile or flexural tests after chemical exposure;
 5. use profilometry to quantify surface roughness and pitting;
 6. repeat the maize-bag experiment with a higher range CO2 sensor;
-7. build small PVC and PP prototype bags and test them with maize under sunlight;
-8. test PE and PET as future comparators if time allows;
-9. investigate Aflasafe or other biocontrol options as a separate pre-harvest direction;
-10. run field validation in Kenya before final material adoption.
+7. compare fully sealed bags against controlled vents, breathable panels or solar-driven airflow paths;
+8. build small PVC and PP prototype bags and test them with maize under sunlight;
+9. test PE and PET as future comparators if time allows;
+10. investigate Aflasafe or other biocontrol options as a separate pre-harvest direction;
+11. run field validation in Kenya before final material adoption.
 
 ## Final handover summary
 
-My individual work helped turn SOLARSAFE’s broad material longevity problem into a structured technical decision. The main output is the evidence based shortlist and recommendation:
+My individual work helped turn SOLARSAFE’s broad material-longevity problem into a structured technical decision. The main output is the evidence-based shortlist and recommendation:
 
 > **PVC should be prioritised for the next SOLARSAFE drying-bag prototype, with PP retained as a strong comparator and Nylon requiring further testing.**
 
-The sodium hypochlorite experiment supports this recommendation because no candidate was ruled out by short-term bleach resistance: ATR-FTIR showed no detectable chemical degradation markers, and microscopy showed no visible surface damage. The choice of PVC therefore comes from the wider design context: its transparency, current relevance to the partner design, and initial compatibility with sodium hypochlorite exposure. PP remains a strong comparator, while Nylon needs more testing.
+The sodium hypochlorite experiment supports this recommendation because no candidate was ruled out by short-term bleach resistance: ATR-FTIR showed no detectable chemical degradation markers, and microscopy showed no visible surface damage. The maize-bag headspace experiment then made the material decision more practical: all sealed bags accumulated humidity and CO2, but PVC had the lowest peak humidity and slower CO2 build-up than PP and Nylon.
 
-This work should be treated as a first-stage material screen, not a final material certification. The next stage should focus on longer ageing tests, improved ATR-FTIR/profilometry measurements, internal oxygen/moisture measurements, mechanical durability, and field trials in Kenya.
-
-My individual work helped turn SOLARSAFE’s broad material longevity problem into a structured technical decision. The main output is the evidence based shortlist and recommendation:
-
-> **PVC should be prioritised for the next SOLARSAFE drying-bag prototype, with PP retained as a comparator and Nylon requiring further testing.**
-
-This work should be treated as a first-stage material screen, not a final material certification. The next stage should focus on longer ageing tests, internal oxygen/moisture measurements, mechanical durability, and field trials in Kenya.
+The most important design lesson is that material choice alone does not solve drying. Even PVC still reached high humidity, so SOLARSAFE needs an engineered route for moisture to escape. The next stage should therefore focus on PVC prototype testing with controlled ventilation, longer ageing tests, improved ATR-FTIR/profilometry measurements, mechanical durability, and field trials in Kenya.
