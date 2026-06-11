@@ -31,4 +31,4 @@ PVC, PP, and Nylon were shortlisted. LDPE was eliminated based on literature evi
 
 ## Team
 
-Kunran Chen, Mirha (and team) — Cambridge University Engineering Tripos, Technology for the Poorest Billion, 2025.
+Kunran Cui(kc621), Mirha Kashif(mnk39)
