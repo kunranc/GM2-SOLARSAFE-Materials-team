@@ -14,12 +14,14 @@ PVC, PP, and Nylon were shortlisted. LDPE was eliminated based on literature evi
 
 ## Repository structure
 
-- `www/` — main individual report
-- `data/` — raw and processed experimental data
-- `figures/` — graphs and images (add actual PNG files here)
-- `protocols/` — step-by-step experimental protocols
-- `references/` — literature review table
-- `interim/` — interim progress notes
+
+* `README.md` — main repository overview and entry point.
+* `Experiment 1 - Sodium Hypochlorite Exposure/` — sodium hypochlorite material exposure work, including `ATR Data/`, `Microscope Data/`, `Experiment 1 set-up` and `README.md`.
+* `Experiment 2 - Moisture Exposure/` — maize-bag moisture, CO2 and temperature monitoring work, including `Experiment 2 set-up`, `Measurements.md` and `README.md`.
+* `Individual Findings/` — individual contribution write-ups and personal findings.
+* `interim/` — interim progress notes, project planning and earlier scope development.
+* `references/` — literature review material, including `literature_review_table.md`.
+
 
 ## Key findings
 
@@ -27,7 +29,7 @@ PVC, PP, and Nylon were shortlisted. LDPE was eliminated based on literature evi
 
 **Experiment 2 (Moisture retention):** PP and Nylon had highest moisture retention. PVC was moderate.
 
-**Recommendation:** PP and PVC are the strongest candidates. Further testing needed for Nylon, PE, and PET.
+**Recommendation:** PVC is the strongest candidate. Further testing needed for Nylon, PE, and PET.
 
 ## Team
 
