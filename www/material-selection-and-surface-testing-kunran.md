@@ -378,9 +378,8 @@ These should describe exactly how the experiments were performed so that another
 references/literature_review_table.md
 ```
 
-This file should include the aflatoxin/plastic literature and notes from expert discussions. It should include both the Macri et al. packaging study and the John et al. peanut study because both influenced the material-selection logic.
 
-Suggested table format:
+
 
 | Source                                                                                                                                                                                              | Crop/product                                               | Materials         | Method                                                         | Key finding                                                                                                  | Relevance to SOLARSAFE                                                                                                   |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ----------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
