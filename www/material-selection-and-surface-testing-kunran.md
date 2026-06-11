@@ -388,7 +388,7 @@ references/literature_review_table.md
 
 ## Strengths
 
-* The project narrowed a broad aflatoxin-control problem into a specific and testable material-selection question.
+* The project narrowed a broad aflatoxin-control problem into a specific material-selection question.
 * The recommendation is based on partner needs, expert feedback, literature evidence and laboratory testing.
 * The literature review helped justify why LDPE was removed from the first experimental shortlist rather than simply choosing materials based on availability.
 * The maize-bag experiment showed that internal humidity and CO2 can rise quickly after sealing, so material choice should be evaluated together with ventilation and drying behaviour.
@@ -415,17 +415,15 @@ Future teams should:
 2. add UV, heat and mechanical ageing to better represent field use;
 3. perform folding, puncture and tensile tests after chemical exposure;
 4. use profilometry to quantify surface roughness and pitting;
-5. repeat the maize-bag experiment with a higher-range CO2 sensor;
-6. complete humidity, CO2, temperature and moisture monitoring for PP, PVC and Nylon;
-7. build small PP and PVC prototype bags and test them with maize under sunlight;
-8. test PE and PET as future comparators if time allows;
-9. investigate Aflasafe or other biocontrol options as a separate pre-harvest direction;
-10. run field validation in Kenya before final material adoption.
+5. repeat the maize-bag experiment with a higher range CO2 sensor;
+6. test PE and PET as future comparators if time allows;
+7. investigate Aflasafe or other biocontrol options as a separate pre-harvest direction;
+8. run field validation in Kenya before final material adoption.
 
 ## Final handover summary
 
-My individual work helped turn SOLARSAFE’s broad material-longevity problem into a structured technical decision. The main output is the evidence-based shortlist and recommendation:
+My individual work helped turn SOLARSAFE’s broad material longevity problem into a structured technical decision. The main output is the evidence based shortlist and recommendation:
 
-> **PP should be prioritised for the next SOLARSAFE drying-bag prototype, with PVC retained as a comparator and Nylon requiring further testing.**
+> **PVC should be prioritised for the next SOLARSAFE drying-bag prototype, with PP retained as a comparator and Nylon requiring further testing.**
 
 This work should be treated as a first-stage material screen, not a final material certification. The next stage should focus on longer ageing tests, internal oxygen/moisture measurements, mechanical durability, and field trials in Kenya.
