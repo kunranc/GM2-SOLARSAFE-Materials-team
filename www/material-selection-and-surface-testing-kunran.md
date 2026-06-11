@@ -6,12 +6,12 @@ Article by **Kunran Cui**
 
 This article documents my individual contribution to the SOLARSAFE Materials Team. The aim of my work was to investigate which plastic material is most suitable for a reusable maize drying bag, focusing on:
 
-* how plastic choice may affect aflatoxin or fungal-residue risk;
+* how plastic choice may affect aflatoxin risk;
 * whether sodium hypochlorite exposure damages candidate plastics;
 * whether different plastics create different moisture and gas conditions inside maize bags;
 * how future teams can continue the material-testing work.
 
-My main ownership was the material-selection logic, the aflatoxin/plastic literature review, procurement research, support for experiment design, ATR and microscope observation, and interpretation of the final material recommendation. Mirha Kashif contributed substantially to sodium hypochlorite research, risk assessment, laboratory preparation, sample setup, and experimental execution. Several parts of the practical work were joint, especially the laboratory observations and result interpretation.
+My main ownership was the material selection logic, the aflatoxin/plastic literature review, procurement research, support for experiment design, ATR and microscope observation, and interpretation of the final material recommendation. Mirha Kashif contributed substantially to sodium hypochlorite experiment set up, risk assessment, laboratory preparation and experiment procedures. Several parts of the practical work were joint, especially the laboratory observations and result interpretation.
 
 ## Brief project context
 
@@ -19,7 +19,7 @@ SOLARSAFE aims to make maize drying safer, more controlled, and more reusable be
 
 > Which plastic is most suitable for a reusable maize drying bag?
 
-The current recommendation is to prioritise **polypropylene (PP)** for the next SOLARSAFE drying-bag prototype, while keeping **PVC** as an important comparator and testing **Nylon** further before making a firm conclusion.
+The current recommendation is to prioritise **PVC** for the next SOLARSAFE drying-bag prototype, while keeping **PP** as an important comparator and testing **Nylon** further before making a firm conclusion.
 
 ## Scope development
 
@@ -27,15 +27,15 @@ At the start of the project, the wider team considered several possible directio
 
 However, this quickly became too broad for the short project timeframe. A filter or coated lining would require mechanical design, material selection, and a clear understanding of how aflatoxin or fungal material interacts with plastic surfaces. Without first understanding the surface-interaction problem, it would be difficult to justify a specific coating or filter design. We therefore narrowed the project to the material problem itself.
 
-We considered several alternative ideas before reaching the final scope. One idea was to use desiccants to control moisture inside the bag, but we were concerned about whether this would be suitable for direct food-crop use without further safety and practicality testing. Another idea was to coat the plastic surface so that it would be less likely to retain aflatoxin or related contaminants. However, that again depended on first knowing whether aflatoxin interacts with the plastic surface.
+We considered several alternative ideas before reaching the final scope. One idea was to use desiccants to control moisture inside the bag, but we were concerned about whether this would be suitable for direct food crop use without further safety testing. Another idea was to coat the plastic surface so that it would be less likely to retain aflatoxin or related contaminants. However, that again depended on first knowing whether aflatoxin interacts with the plastic surface.
 
 This led to three linked material questions:
 
-1. Does the plastic surface have possible relevance to aflatoxin or fungal retention?
+1. Does the plastic surface have possible relevance to aflatoxin retention?
 2. Does sodium hypochlorite exposure damage the plastic?
 3. Does the plastic material affect moisture, CO2 and temperature conditions inside the bag?
 
-The final project therefore became a material-screening study rather than a full drying-system redesign.
+The final project therefore became a material screening study rather than a full drying system redesign.
 
 ## Material selection
 
@@ -57,11 +57,11 @@ The materials were selected using four criteria.
 | Criterion                           | Reason                                                                             |
 | ----------------------------------- | ---------------------------------------------------------------------------------- |
 | Aflatoxin or fungal-residue concern | Materials associated with higher contamination or residue risk were deprioritised. |
-| Transparency and usability          | A drying bag should ideally allow visual inspection of maize.                      |
-| Practical availability              | Materials had to be possible to buy, cut, test and potentially manufacture.        |
-| Partner relevance                   | PVC was kept because it was relevant to the current drying-container direction.    |
+| Transparency and usability          | SOLARSAFE drying bag needs to be transparent for solar energy.                     |
+| Practical availability              | Materials needed to be low cost to make.      |
+| Current material relevance          | PVC was kept because it is currently in use as SOLARSAFE drying bags.  |
 
-LDPE was removed from the first shortlist after the literature review suggested a stronger association with aflatoxin levels in plastic-packaged food samples. PELA was removed because it was less suitable for a transparent drying bag. PE and PET were not rejected permanently, but moved to future work because the project timeframe required a smaller experimental set.
+LDPE was removed from the first shortlist after the literature review suggested a stronger association with aflatoxin levels in plastic-packaged food samples. PE and PET were not rejected permanently, but moved to future work because the project timeframe required a smaller experimental set.
 
 Recommended supporting file:
 
@@ -71,7 +71,7 @@ figures/material_selection_funnel.png
 
 ## Literature review and expert input
 
-I led the literature review on aflatoxin/plastic and Aspergillus/plastic interaction. This was important because direct testing with aflatoxin or Aspergillus flavus was not feasible in the available time. Such work would require specialist safety procedures, biological samples and equipment such as ELISA, Reveal Q or HPLC.
+I led the literature review on aflatoxin/plastic and Aspergillus/plastic interaction. This was important because direct testing with aflatoxin or Aspergillus flavus was not feasible in the available time. Such work would require specialist safety procedures, biological samples and equipment such as ELISA or Reveal Q.
 
 We first contacted people who had worked with aflatoxin or related plant-disease problems. Rich Stutt, who works in plant epidemiology, explained that aflatoxin testing is difficult to set up quickly and directed us towards relevant literature and comparable experimental approaches. This helped us avoid designing an unrealistic biological experiment.
 
@@ -96,7 +96,7 @@ The study analysed **64 ready-packed nuts and dried fruits** bought from the Rom
 * PE;
 * PET.
 
-The authors used an immunoaffinity-column cleanup procedure followed by RIDASCREEN FAST ELISA testing. They measured both total aflatoxins and aflatoxin B1.
+The authors used RIDASCREEN FAST ELISA testing which measured both total aflatoxins and aflatoxin B1.
 
 The key finding was that total aflatoxin concentrations were highest in samples packed in **LDPE**, followed by **PP**, then **PE**, and lowest in **PET**. Aflatoxin B1 was detected in all samples packed in LDPE, PP and PE, while most PET-packed samples had aflatoxin B1 concentrations below 1 µg/kg. The authors concluded that nuts stored in LDPE appeared more prone to aflatoxin contamination, while PET was more suitable for maintaining product quality and safety.
 
@@ -115,34 +115,6 @@ The way I used this paper in the project was:
 
 This literature review helped move the project away from choosing plastics only based on price or availability. It showed that the surface and storage behaviour of the material could matter for food safety, and this became one of the reasons our final material shortlist focused on PP, PVC and Nylon rather than including LDPE.
 
-## Literature review case study 2: peanut storage under different packaging conditions
-
-I also reviewed a peanut-focused study: **John et al. (2019), *The effects of different packaging materials, temperatures and water activities to control aflatoxin B1 production by Aspergillus flavus and A. parasiticus in stored peanuts***. I initially looked for this because Rich Stutt had suggested comparable work on Aspergillus and aflatoxin measurement in peanuts.
-
-This study was slightly different from the Macri et al. packaging study. Instead of measuring naturally contaminated market samples, it used commercially obtained peanut kernels that were separately inoculated with aflatoxigenic Aspergillus species and stored under controlled conditions. The study compared packaging materials, temperature and water activity.
-
-The packaging materials were:
-
-* LDPE;
-* PP;
-* PELA, which is polyethylene-laminated aluminium.
-
-The study stored inoculated peanut kernels for one month under different temperature and water-activity conditions, and quantified aflatoxin B1 using HPLC-FLD.
-
-The key finding was that the highest aflatoxin B1 concentrations were detected in LDPE for both Aspergillus flavus and Aspergillus parasiticus, followed by PP. PELA performed best under several conditions and in some cases no aflatoxin B1 was detected.
-
-This paper was useful because it gave more controlled evidence than the market-sample study. It suggested that packaging material, water activity and temperature can strongly affect aflatoxin B1 production in stored peanuts. However, it did not directly test maize or our specific SOLARSAFE drying-bag use case. PELA was also not an ideal first-round material for us because our drying bag needed to be practical, transparent, and suitable for observation of maize during drying.
-
-The way I used this paper was:
-
-| Finding from peanut study                                             | How I used it in SOLARSAFE                                                                                  |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| LDPE had the highest aflatoxin B1 levels in inoculated stored peanuts | Reinforced the decision to deprioritise LDPE                                                                |
-| PP performed better than LDPE but was not the best in that study      | Supported keeping PP as a practical candidate but not treating it as risk-free                              |
-| PELA performed well in reducing aflatoxin B1 under some conditions    | Identified PELA as scientifically interesting, but less suitable for our transparent drying-bag requirement |
-| Temperature and water activity affected aflatoxin production          | Supported adding the moisture/CO2 bag experiment to our project                                             |
-
-Together, these two papers helped shape the material-selection logic. Macri et al. gave evidence from real market samples across LDPE, PP, PE and PET. John et al. gave controlled peanut evidence across LDPE, PP and PELA. Both pointed towards the same practical warning: LDPE was not a good first-round choice for our SOLARSAFE bag testing.
 
 ## Experiment 1: maize-bag CO2 and moisture monitoring
 
