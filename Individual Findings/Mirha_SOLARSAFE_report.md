@@ -371,9 +371,9 @@ A material that maintains favourable drying conditions but strongly retains afla
 
 ## References
 
-- Macri, A.M., Pop, G., Epure, D.G., Szabo, K. and Vodnar, D.C. (2021). "The Occurrence of Aflatoxins in Nuts and Dry Nuts Packed in Four Different Plastic Packaging from the Romanian Market." *Microorganisms*, 9(1).
-- Omar, S.S., Haddad, M.A. and Parisi, S. (2020). "Validation of HPLC and Enzyme-Linked Immunosorbent Assay (ELISA) Techniques for Detection and Quantification of Aflatoxins in Different Food Samples." *Foods*, 9(5).
-- Shakerardekani, A. and Karim, R. (2013). "Effect of Different Types of Plastic Packaging Films on the Moisture and Aflatoxin Contents of Pistachio Nuts During Storage." *Journal of Food Science and Technology*, 50(2), pp. 409-411.
+- Macri, A.M., Pop, G., Epure, D.G., Szabo, K. and Vodnar, D.C. (2021). "The Occurrence of Aflatoxins in Nuts and Dry Nuts Packed in Four Different Plastic Packaging from the Romanian Market." *Microorganisms*,.
+- Omar, S.S., Haddad, M.A. and Parisi, S. (2020). "Validation of HPLC and Enzyme-Linked Immunosorbent Assay (ELISA) Techniques for Detection and Quantification of Aflatoxins in Different Food Samples." *Foods*,.
+- Shakerardekani, A. and Karim, R. (2013). "Effect of Different Types of Plastic Packaging Films on the Moisture and Aflatoxin Contents of Pistachio Nuts During Storage." *Journal of Food Science and Technology*, 
 
 ---
 
