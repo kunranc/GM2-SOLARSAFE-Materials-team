@@ -116,7 +116,7 @@ The way I used this paper in the project was:
 This literature review helped move the project away from choosing plastics only based on price or availability. It showed that the surface and storage behaviour of the material could matter for food safety, and this became one of the reasons our final material shortlist focused on PP, PVC and Nylon rather than including LDPE.
 
 
-## Experiment 1: maize-bag headspace study — humidity, CO2 and temperature monitoring
+## Experiment 1: maize-bag internal conditions study — humidity, CO2 and temperature monitoring
 
 ### Objective
 
