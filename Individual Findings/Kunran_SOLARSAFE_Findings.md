@@ -11,7 +11,7 @@ This article documents my individual contribution to the SOLARSAFE Materials Tea
 * whether different plastics create different moisture and gas conditions inside maize bags;
 * how future teams can continue the material-testing work.
 
-My main ownership was the material selection logic, the aflatoxin/plastic literature review, procurement research, support for experiment design, ATR and microscope observation, and interpretation of the final material recommendation. Mirha Kashif contributed substantially to sodium hypochlorite experiment set up, risk assessment, laboratory preparation and experiment procedures. Several parts of the practical work were joint, especially the laboratory observations and result interpretation.
+My main ownership was the material selection logic, the aflatoxin/plastic literature review, procurement research, support for experiment design, and interpretation of the final material recommendation. As my teammate was less familiar with GitHub, I also took responsibility for uploading and organising most of the repository files so that the work was accessible for assessment and future handover. Mirha Kashif contributed substantially to sodium hypochlorite experiment set up, risk assessment, laboratory preparation and experiment procedures. Several parts of the practical work were joint, especially the laboratory observations and result interpretation.
 
 ## Brief project context
 
