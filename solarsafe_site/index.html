@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOLARSAFE Materials Team — GM2 2025</title>
+<style>
+  :root{--green:#5b8c2a;--dark:#1f2a1a;--cream:#f4efe6;--ink:#27272a;--muted:#6b7280;--card:#ffffff;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--cream);line-height:1.7;}
+  header{background:var(--dark);color:#fff;padding:80px 24px 60px;text-align:center;}
+  header h1{font-size:3rem;letter-spacing:2px;}
+  header .sub{color:#b9d08a;font-size:1.3rem;margin-top:8px;font-style:italic;}
+  header .team{margin-top:18px;color:#d4d4d8;font-size:.95rem;}
+  nav{background:#fff;border-bottom:1px solid #e5e1d8;position:sticky;top:0;z-index:5;text-align:center;padding:12px 8px;}
+  nav a{color:var(--green);text-decoration:none;margin:0 14px;font-family:Helvetica,Arial,sans-serif;font-size:.85rem;text-transform:uppercase;letter-spacing:1px;}
+  nav a:hover{text-decoration:underline;}
+  main{max-width:880px;margin:0 auto;padding:48px 24px;}
+  section{margin-bottom:56px;}
+  h2{font-size:1.8rem;color:var(--dark);border-bottom:3px solid var(--green);display:inline-block;padding-bottom:6px;margin-bottom:20px;}
+  h3{font-size:1.15rem;color:var(--green);margin:22px 0 8px;font-family:Helvetica,Arial,sans-serif;}
+  p{margin-bottom:14px;}
+  .card{background:var(--card);border:1px solid #e5e1d8;border-radius:10px;padding:24px 28px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+  .stat{text-align:center;padding:20px;}
+  .stat .big{font-size:2rem;color:var(--green);font-weight:bold;}
+  ul{margin:0 0 14px 22px;}
+  li{margin-bottom:6px;}
+  .badge{display:inline-block;background:#e8f0db;color:#3f6212;border-radius:999px;padding:4px 14px;margin:4px 6px 4px 0;font-family:Helvetica,Arial,sans-serif;font-size:.82rem;}
+  .verdict{background:#3f6212;color:#fff;border-radius:10px;padding:24px 28px;}
+  .verdict h3{color:#d9f99d;margin-top:0;}
+  footer{background:var(--dark);color:#a1a1aa;text-align:center;padding:32px 16px;font-size:.85rem;}
+  footer a{color:#b9d08a;}
+  blockquote{border-left:4px solid var(--green);padding-left:16px;color:var(--muted);font-style:italic;margin-bottom:14px;}
+</style>
+</head>
+<body>
+<header>
+  <h1>SOLARSAFE</h1>
+  <div class="sub">Materials Team — Material selection for safer maize drying</div>
+  <div class="team">Kunran Cui &amp; Mirha Kashif · Cambridge University Engineering Tripos · Technology for the Poorest Billion · GM2 2025</div>
+</header>
+<nav>
+  <a href="#problem">The Problem</a>
+  <a href="#approach">Our Approach</a>
+  <a href="#experiments">Experiments</a>
+  <a href="#findings">Findings</a>
+  <a href="#sdg">SDG Alignment</a>
+  <a href="#reflection">Reflection</a>
+  <a href="#future">Future Work</a>
+</nav>
+<main>
+
+<section id="problem">
+  <h2>The Problem: Aflatoxin in Maize</h2>
+  <p>Across many regions of the Global South, smallholder farmers face challenges that extend far beyond crop production. One significant problem is the contamination of staple crops such as maize by <strong>aflatoxins</strong> — toxic compounds produced by fungi including <em>Aspergillus flavus</em>. Exposure can cause liver damage, immune suppression, and impaired child development, while contaminated crops may fail food-safety standards needed for local markets and trade.</p>
+  <p>A major cause of contamination is <strong>excessive moisture during drying and storage</strong>. Research suggests maize should be dried to roughly <strong>14% moisture content or below</strong> to substantially reduce fungal growth. Yet many farmers rely on traditional open-air drying, leaving crops vulnerable to rain, humidity, pests, and contamination.</p>
+  <p>Working alongside Bernard and local engineers and scientists in Kenya, the <strong>SOLARSAFE</strong> project is developing low-cost, solar-powered drying containers that help farmers reach safer moisture levels before long-term storage — reducing crop losses, improving food safety, and strengthening economic resilience.</p>
+</section>
+
+<section id="approach">
+  <h2>Our Approach: Material Selection</h2>
+  <p>Our team investigated how the choice of plastic affects the performance, hygiene, and durability of the drying enclosure. The ideal bag material must:</p>
+  <div class="card">
+    <span class="badge">Withstands NaOCl cleaning</span>
+    <span class="badge">Reduces aflatoxin trapping</span>
+    <span class="badge">Supports moisture control</span>
+    <span class="badge">Transparent</span>
+    <span class="badge">Low cost</span>
+    <span class="badge">Durable</span>
+  </div>
+  <h3>Materials shortlisted</h3>
+  <p><strong>PVC</strong> (the material SOLARSAFE currently uses — retained as control), <strong>polypropylene (PP)</strong>, and <strong>nylon</strong> — all transparent, food-safe, durable, widely available, and with contrasting gas/moisture permeability. <strong>LDPE</strong> was eliminated based on literature evidence of <em>Aspergillus</em>-related accumulation, and <strong>PELA</strong> was excluded because its opacity is incompatible with the transparent drying system.</p>
+</section>
+
+<section id="experiments">
+  <h2>Experiments</h2>
+  <div class="card">
+    <h3>Experiment 1 — Sodium Hypochlorite Exposure (ATR-FTIR &amp; Microscopy)</h3>
+    <p>Sodium hypochlorite is a low-cost disinfectant already widely available in Kenya. We exposed PP, PVC, and nylon samples to NaOCl solutions (3%, 5%, and 5% with heat), then assessed chemical degradation with ATR-FTIR spectroscopy and surface damage with optical microscopy — testing whether repeated cleaning is a feasible, affordable hygiene strategy.</p>
+  </div>
+  <div class="card">
+    <h3>Experiment 2 — Moisture &amp; Headspace Monitoring</h3>
+    <p>We measured moisture levels and CO₂ concentrations inside maize-filled bags of each material. These indicators characterise the internal storage environment and help identify conditions that may favour microbial activity.</p>
+  </div>
+</section>
+
+<section id="findings">
+  <h2>Key Findings</h2>
+  <div class="grid">
+    <div class="card stat"><div class="big">PP &amp; PVC</div><div>No clear chemical degradation after NaOCl exposure</div></div>
+    <div class="card stat"><div class="big">PP &amp; Nylon</div><div>Highest moisture retention in bag tests</div></div>
+    <div class="card stat"><div class="big">Nylon</div><div>Inconclusive ATR results — needs further testing</div></div>
+  </div>
+  <div class="verdict">
+    <h3>Recommendation</h3>
+    <p><strong>PVC is the strongest current candidate</strong>, combining chemical stability, transparency, availability, and acceptable moisture performance — with PP retained as a strong comparator. Further testing of nylon, PE, and PET is needed before a final material certification. This work is a first-stage material screen, not a final certification.</p>
+  </div>
+</section>
+
+<section id="sdg">
+  <h2>Sustainable Development Goals</h2>
+  <div class="grid">
+    <div class="card"><h3>SDG 2 — Zero Hunger</h3><p>Better drying preserves food supplies and reduces post-harvest losses from fungal contamination.</p></div>
+    <div class="card"><h3>SDG 3 — Good Health &amp; Well-being</h3><p>Preventing aflatoxin exposure reduces liver disease, immune suppression, and developmental harm in children — stopping risk at the source.</p></div>
+    <div class="card"><h3>SDG 8 — Decent Work &amp; Economic Growth</h3><p>Safer grain is less likely to be rejected by buyers, protecting smallholder incomes and market access.</p></div>
+    <div class="card"><h3>SDG 12 — Responsible Consumption &amp; Production</h3><p>Durable, cleanable materials are reused rather than replaced, improving resource efficiency and cutting waste.</p></div>
+  </div>
+  <p style="margin-top:14px">The project also reflects the <strong>Principles for Digital Development</strong>: designing with the user, building for sustainability with locally available materials, and collaborating across disciplines with academics, agricultural scientists, and local stakeholders in Kenya.</p>
+</section>
+
+<section id="reflection">
+  <h2>Project Management &amp; Reflection</h2>
+  <h3>Team structure</h3>
+  <p>The wider team split into mechanics and materials sub-teams in week one. Within the materials pair, Kunran focused on aflatoxin research, material selection, and procurement; Mirha focused on sodium hypochlorite research, experimental design, and risk assessment — with both sharing outreach, literature review, and the end-to-end experimental pipeline.</p>
+  <h3>Expert consultation</h3>
+  <p>Rich Stutt guided us to plant-epidemiology literature; Gideon Darko advised on moisture measurement and aflatoxin quantification; Professor Eugene Terentjev supervised the chemical exposure work in the plastics lab; and coordinators Lara and Tom steered the materials focus and microscale observation.</p>
+  <h3>Challenges &amp; adaptations</h3>
+  <ul>
+    <li><strong>Procurement delays</strong> — engineering-grade samples were slow to arrive, so we adapted using commercial bags made of the same target materials (PP, PVC, nylon).</li>
+    <li><strong>Lab access</strong> — over 20 outreach emails were needed before securing supervised access to the plastics lab.</li>
+    <li><strong>Aflatoxin complexity</strong> — direct fungal testing needs specialist equipment and time, so it was treated as a research component while experiments focused on durability and chemical resistance.</li>
+  </ul>
+  <blockquote>Key lessons: narrow the scope early, contact experts quickly, and keep contingency plans for procurement and lab access.</blockquote>
+</section>
+
+<section id="future">
+  <h2>Future Exploration</h2>
+  <ul>
+    <li>Multi-sensor mapping of oxygen and moisture distribution inside bags over time.</li>
+    <li>Longer NaOCl exposure with replicates, improved ATR-FTIR contact, and profilometry for surface roughness.</li>
+    <li>UV, heat, and mechanical ageing to represent field use; folding, puncture, and tensile testing after chemical exposure.</li>
+    <li>Testing PE and PET as further candidates; small PVC and PP prototype bags trialled with maize under sunlight.</li>
+    <li><strong>Aflasafe</strong> and other biocontrol options as a pre-harvest complement; field validation in Kenya before final material adoption.</li>
+  </ul>
+</section>
+
+</main>
+<footer>
+  <p>SOLARSAFE Materials Team — Kunran Cui &amp; Mirha Kashif · GM2 2025</p>
+  <p><a href="https://github.com/kunranc/GM2-SOLARSAFE-Materials-team">View the full repository, data, and reports on GitHub</a></p>
+</footer>
+</body>
+</html>
