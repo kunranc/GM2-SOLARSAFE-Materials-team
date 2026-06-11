@@ -62,7 +62,7 @@ Following the opening of the bags on Day 3, humidity decreased in all treatments
 | PVC | 88.5% | 66.5% |
 | PP | 96.7% | 87.8% |
 
-> **Figure.** Humidity average over days after setup for nylon, PP, and PVC.
+> **Figure 2** Humidity average over days after setup for nylon, PP, and PVC.
 
 The increase in humidity indicates that moisture released from the corn accumulated within the sealed bags. This is expected because corn continues to respire, releasing water. For drying applications, high humidity is undesirable because it reduces the moisture gradient between the corn and the surrounding environment, slowing further drying.
 
@@ -74,7 +74,7 @@ CO₂ concentrations rose throughout the experiment in all bag materials. The ny
 
 After the bags were opened, CO₂ concentrations declined markedly. However, concentrations remained highest in the PP treatment, at 2396 ppm, compared with PVC at 994 ppm and nylon at 834 ppm.
 
-> **Figure.** CO₂ average over days after setup for nylon, PP, and PVC.
+> **Figure 3** CO₂ average over days after setup for nylon, PP, and PVC.
 
 The increase in CO₂ confirms that the corn remained biologically active throughout storage. Corn respiration can be described by:
 
@@ -90,7 +90,7 @@ However, several readings reached the sensor maximum value of 9999 ppm. These va
 
 Temperature remained relatively stable throughout the experiment, varying from approximately 20.3°C to 21.7°C, a total range of less than 1.5°C. No substantial differences in temperature were observed between the packaging treatments despite marked increases in CO₂ concentration.
 
-> **Figure.** Temperature average over days after setup for nylon, PP, and PVC.
+> **Figure 4** Temperature average over days after setup for nylon, PP, and PVC.
 
 As respiration generates both heat and carbon dioxide, it was anticipated that higher rates of respiration might result in increased temperatures. However, the limited temperature variation observed suggests that respiratory heat production was either relatively small or effectively dissipated to the surrounding environment.
 
@@ -112,7 +112,7 @@ At Day 0, moisture content was relatively uniform across all cobs, with most mea
 
 By Day 4, differences in moisture distribution had developed between treatments.
 
-> **Figure.** Radar graphs of moisture distribution throughout corn samples:
+> **Figure 5** Radar graphs of moisture distribution throughout corn samples:
 >
 > - Nylon: Corn 6
 > - PVC: Corn 2
@@ -178,9 +178,9 @@ The following treatment groups were established. All solutions were made up to 3
 
 Following exposure, some samples were transferred to an oven to simulate repeated use and long-term environmental exposure.
 
-> **Figure.** Experiment and sample setup.
+> **Figure 6** Experiment and sample setup.
 >
-> **Figure.** ATR samples on glass slides.
+> **Figure 7** ATR samples on glass slides.
 
 Material degradation was assessed using two complementary techniques: ATR-FTIR analysis and microscopy observations. Profilometry was intended but could not be completed because the instrument was unavailable due to a technical fault.
 
@@ -196,7 +196,7 @@ For each material, spectra from treated samples were compared with the correspon
 
 ### Nylon
 
-> **Figure.** Offset ATR spectra for nylon.
+> **Figure 8** Offset ATR spectra for nylon.
 
 The nylon spectra contained characteristic amide bands at approximately 1630 cm⁻¹, 1530 cm⁻¹, and 1260 cm⁻¹. These correspond to Amide I, Amide II, and Amide III bands, respectively, which arise from the amide groups forming the polymer backbone.
 
@@ -210,7 +210,7 @@ The agreement between ATR and microscopy suggests that heat treatment primarily 
 
 ### PVC
 
-> **Figure.** Offset ATR spectra for PVC.
+> **Figure 9** Offset ATR spectra for PVC.
 
 PVC spectra are dominated by the fingerprint region between approximately 1250 and 800 cm⁻¹, which contains vibrations associated with the polymer backbone and C-Cl bonds. This region is particularly sensitive to changes in additives, molecular packing, and local polymer structure.
 
@@ -224,7 +224,7 @@ Taken together, the results indicate that sodium hypochlorite treatment modified
 
 ### Polypropylene (PP)
 
-> **Figure.** Offset ATR spectra for PP.
+> **Figure 10** Offset ATR spectra for PP.
 
 Polypropylene exhibited the smallest treatment-dependent spectral changes of the three polymers. Characteristic bands associated with CH stretching and CH₃ bending remained largely unchanged across all treatments, indicating that the molecular structure of the remaining polymer was largely preserved.
 
@@ -370,6 +370,8 @@ This experiment addresses a mechanistic question not examined in the previous st
 A material that maintains favourable drying conditions but strongly retains aflatoxin may present different risks from a material that exhibits little toxin adsorption. Understanding these interactions would therefore help separate the effects of storage environment from the intrinsic properties of the polymer surface and may explain some of the differences reported between packaging materials in the literature.
 
 ## References
+
+Though Kunran was mainly responsbile for ltierature reviews and I for experimental set up we both contributed to anaylsis of current research and design of experiments.
 
 - Macri, A.M., Pop, G., Epure, D.G., Szabo, K. and Vodnar, D.C. (2021). "The Occurrence of Aflatoxins in Nuts and Dry Nuts Packed in Four Different Plastic Packaging from the Romanian Market." *Microorganisms*,.
 - Omar, S.S., Haddad, M.A. and Parisi, S. (2020). "Validation of HPLC and Enzyme-Linked Immunosorbent Assay (ELISA) Techniques for Detection and Quantification of Aflatoxins in Different Food Samples." *Foods*,.
