@@ -33,17 +33,16 @@ Open the website here:
 https://kunranc.github.io/GM2-SOLARSAFE-Materials-team/solarsafe_site/
 
 * [View the SOLARSAFE Project Website](https://kunranc.github.io/GM2-SOLARSAFE-Materials-team/solarsafe_site/)
-* [Website source code](./solarsafe_site/index.html)
 
 > Note: the website link will only work after the `solarsafe_site/` folder has been uploaded to the repository and GitHub Pages has been enabled.
 
 ## Repository Structure
 
 * `README.md` — main repository overview and entry point
-* `solarsafe_site/` — public-facing website summarising the SOLARSAFE materials project
-* `Experiment 1 - Sodium Hypochlorite Exposure/` — sodium hypochlorite material exposure work, including `ATR Data/`, `Microscope Data/`, experiment set-up files, and `README.md`
-* `Experiment 2 - Moisture Exposure/` — maize-bag moisture, CO₂, and temperature monitoring work, including experiment set-up files, `Measurements.md`, and `README.md`
-* `Individual Findings/` — individual contribution write-ups and personal findings
+* `Group Report.md` — the team's group report
+* `Experiment 1 - Sodium Hypochlorite-Plastic/` — sodium hypochlorite material exposure work: `ATR Data/` (ATR-FTIR spectra and CSV data), `Microscope Data/` (microscope images), experiment set-up notes, figures, and `README.md`
+* `Experiment 2 - Moisture Exposure/` — maize-bag moisture, CO₂, and temperature monitoring work: experiment set-up notes, `Measurements.md`, figures, and `README.md`
+* `Individual Findings/` — individual contribution write-ups, personal findings, and the final presentation (PDF and video)
 * `interim/` — interim progress notes, project planning, and earlier scope development
 * `references/` — literature review material, including `literature_review_table.md`
 
@@ -71,4 +70,3 @@ Further testing is needed for Nylon, PE, and PET before making a final material 
 
 * Kunran Cui (`kc621`)
 * Mirha Kashif (`mnk39`)
-
