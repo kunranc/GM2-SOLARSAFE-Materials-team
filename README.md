@@ -30,6 +30,7 @@ We created a simple project website to present the SOLARSAFE work in a more acce
 The website summarises the project context, the aflatoxin problem, our material-selection focus, experimental approach, SDG alignment, and key team reflections.
 
 Open the website here:
+https://kunranc.github.io/GM2-SOLARSAFE-Materials-team/solarsafe_site/
 
 * [View the SOLARSAFE Project Website](https://kunranc.github.io/GM2-SOLARSAFE-Materials-team/solarsafe_site/)
 * [Website source code](./solarsafe_site/index.html)
