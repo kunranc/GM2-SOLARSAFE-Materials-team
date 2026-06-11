@@ -169,9 +169,7 @@ The clearest result was the rapid rise in relative humidity in every bag:
 | Nylon | 56.2% | 94.1% | +37.9 percentage points | 67.5% | -26.6 percentage points |
 
 
-This is an important result for SOLARSAFE. The maize cobs were releasing moisture, but in a sealed bag that moisture accumulated in the headspace instead of escaping. A drying bag should remove moisture from the maize environment; a sealed bag of any of these polymers risks doing the opposite by creating a near-saturated microclimate.
-
-The material ranking was also informative. PP reached the highest humidity at **96.7%**, Nylon reached **94.1%**, and PVC reached the lowest peak humidity at **88.5%**. PVC's peak humidity was **8.2 percentage points lower than PP** and **5.6 percentage points lower than Nylon**. This suggests that, under our setup, PVC allowed slightly more moisture exchange than PP and Nylon, or at least accumulated less water vapour in the headspace.
+The material ranking was informative. PP reached the highest humidity at **96.7%**, Nylon reached **94.1%**, and PVC reached the lowest peak humidity at **88.5%**. PVC's peak humidity was **8.2 percentage points lower than PP** and **5.6 percentage points lower than Nylon**. This suggests that, under our setup, PVC allowed slightly more moisture exchange than PP and Nylon, or at least accumulated less water vapour in the headspace.
 
 The Day 3 opening was especially useful. After the bags were opened, humidity fell from **88.5% to 66.5%** in PVC and from **94.1% to 67.5%** in Nylon. PP also fell, but only from **96.7% to 87.8%**, meaning it remained very humid even after ventilation. This is consistent with PP behaving as the most moisture-trapping bag in our experiment.
 
@@ -182,13 +180,13 @@ The key conclusion from the humidity data is that moisture leaves the headspace 
 
 CO2 also rose in all bags. This was likely driven by respiration from the maize and possibly by general biological activity. It should not be interpreted as direct evidence of Aspergillus flavus growth, because we did not perform fungal identification. However, it is still a useful indicator that the internal atmosphere of the sealed bags changed quickly.
 
-PP and Nylon reached the sensor ceiling of **9999 ppm within 24 hours**. PVC accumulated CO2 more slowly and saturated later, which is consistent with PVC allowing slightly more gas exchange than PP and Nylon under our test conditions. After opening, PP retained much more CO2 than the other materials:
+PP and Nylon reached the sensor ceiling of **9999 ppm within 24 hours**. PVC accumulated CO2 more slowly and saturated later, which is consistent with PVC allowing slightly more gas exchange than PP and Nylon under our test conditions. After opening, PP retained more CO2 than the other materials:
 
 | Material | CO2 behaviour before opening | CO2 after opening | Comparison after opening |
 |---|---|---:|---|
-| PP | Reached sensor ceiling of 9999 ppm within 24 hours | 2396 ppm | Highest retained CO2 |
+| PP | Reached sensor ceiling of 9999 ppm within 2 hours | 2396 ppm | Highest retained CO2 |
 | PVC | Rose more slowly and saturated later | 994 ppm | 1402 ppm lower than PP |
-| Nylon | Reached sensor ceiling of 9999 ppm within 24 hours | 834 ppm | 1562 ppm lower than PP |
+| Nylon | Reached sensor ceiling of 9999 ppm within 2 hours | 834 ppm | 1562 ppm lower than PP |
 
 
 The post-opening CO2 values show the same broad pattern as humidity. PP retained the most gas after opening: **2396 ppm**, compared with **994 ppm** for PVC and **834 ppm** for Nylon. This means PP retained about **2.4 times** as much CO2 as PVC and about **2.9 times** as much CO2 as Nylon after opening.
@@ -199,25 +197,20 @@ The combination of high humidity and high CO2 is concerning for a drying applica
 
 ### Temperature results
 
-Temperature was not a useful differentiator in this experiment. Across the measurements, it stayed approximately within **20.3--21.7 °C**, giving a spread of less than **1.5 °C**. There was no clear material-to-material temperature difference. The main headspace differences were therefore humidity and CO2, not temperature.
-
-This is useful because it means the humidity and CO2 differences are unlikely to be explained simply by one bag being much warmer than the others. Instead, they are more likely related to moisture and gas retention behaviour.
+Temperature was not a useful differentiator in this experiment. Across the measurements, it stayed approximately within **20.3--21.7 °C**, giving a spread of less than **1.5 °C**. There was no clear temperature differences. 
 
 ### Interpretation
 
-This experiment changed how I interpreted the material problem. A material that is chemically stable is not automatically suitable for drying. If the bag traps water vapour and CO2, it can create the damp, stagnant conditions that SOLARSAFE is trying to avoid.
+This experiment changed how I interpreted the material problem. A material that is chemically stable is not automatically suitable for drying. If the bag traps water vapour and CO2, it can create the damp conditions that SOLARSAFE is trying to avoid.
 
 The main design conclusion is:
 
-> **Bag material alone does not solve drying; ventilation does.**
+> **PVC is the material that best deals with humidity.**
 
-All three polymers built a humid, CO2-rich microclimate when sealed. PP and Nylon appeared more airtight and therefore trapped moisture and gas more strongly. PVC had the lowest peak humidity and slower CO2 accumulation, which supports keeping it as the lead material for the current prototype direction. However, even PVC still reached high humidity, so it should not be used as a fully sealed drying bag without an engineered moisture-escape path.
-
-This is why the final material recommendation should be read together with a design recommendation. PVC is the best current candidate among the tested materials, but the bag should include vents, a breathable section, controlled opening, or a solar-driven airflow/chimney effect. Without this, any plastic bag risks acting more like an incubation chamber than a dryer.
 
 ### Limitations
 
-The main limitation was that the CO2 sensor saturated at **9999 ppm**, so the true maximum concentration could not be measured. The sealing method also relied on tape, which may not represent a manufactured drying bag. In addition, each bag contained only two maize cobs, so more replicates would be needed before drawing a strong material conclusion. The Day 3 opening was useful as a ventilation check, but it also means the later readings should be interpreted as post-intervention values rather than purely sealed-bag behaviour.
+The main limitation was that the CO2 sensor saturated at **9999 ppm**, so the true maximum concentration could not be measured. The sealing method also relied on tape, which may not represent a manufactured drying bag. In addition, each bag contained only two maize cobs, so more replicates would be needed before drawing a strong material conclusion. 
 
 Another limitation is that the current figures use summary values rather than full time-series data. The repository should therefore include the raw Day 0--Day 4 readings so future teams can replot the curves and calculate rates of humidity and CO2 build-up.
 
@@ -228,31 +221,15 @@ Future teams should repeat the experiment with:
 * a CO2 sensor with a higher measurement range;
 * at least three replicate bags for each material;
 * standardised bag size, maize mass and sensor position;
-* simultaneous temperature measurement;
-* sealed, partially ventilated and open-control conditions;
-* a controlled vent or breathable panel to compare against fully sealed bags;
 * sunlight or simulated solar-dryer conditions;
 * full time-series logging so that humidity and CO2 build-up rates can be calculated rather than only compared using summary values.
 
-Suggested data table:
-
-| Material | Day/time | CO2 | Humidity | Maize moisture | Observation |
-|---|---|---|---|---|---|
-| PP | Day 0, initial | Insert | 61.3% | Insert | Initial reading |
-| PP | Peak before opening | >9999 ppm if saturated | 96.7% | Insert | Highest humidity among tested bags |
-| PP | After opening | 2396 ppm | 87.8% | Insert | Retained most CO2 and remained very humid |
-| PVC | Day 0, initial | Insert | 66.8% | Insert | Initial reading |
-| PVC | Peak before opening | Insert / saturated later | 88.5% | Insert | Lowest peak humidity |
-| PVC | After opening | 994 ppm | 66.5% | Insert | Large humidity drop after ventilation |
-| Nylon | Day 0, initial | Insert | 56.2% | Insert | Initial reading |
-| Nylon | Peak before opening | >9999 ppm if saturated | 94.1% | Insert | High humidity and rapid CO2 saturation |
-| Nylon | After opening | 834 ppm | 67.5% | Insert | Large humidity drop after ventilation |
 
 ## Experiment 2: sodium hypochlorite exposure and surface analysis
 
 ### Objective
 
-This experiment tested whether sodium hypochlorite exposure damages candidate drying-bag plastics. This matters because reusable drying bags may come into contact with cleaning or disinfectant residues from treated shelves or nearby surfaces. If the material degrades, it may lose transparency, flexibility or structural integrity.
+This experiment tested whether sodium hypochlorite exposure damages candidate drying-bag plastics. This matters because reusable drying bags may come into contact with cleaning residues from treated shelves or nearby surfaces. If the material degrades, it may lose transparency, flexibility, or structural integrity.
 
 The tested materials were:
 
@@ -262,7 +239,7 @@ The practical question was not whether sodium hypochlorite makes any visible dif
 
 ### Exposure and sample handling
 
-The exposure stage was mainly prepared by Mirha. Plastic samples were placed in sodium hypochlorite solutions for the planned exposure period. During the plastic-lab session, we removed the samples from the solutions, rinsed them carefully and dried them before analysis.
+Plastic samples were placed in sodium hypochlorite solutions for the planned exposure period. During the plastic-lab session, we removed the samples from the solutions, rinsed them carefully and dried them before analysis.
 
 This washing and drying step was important because remaining liquid could affect both ATR-FTIR spectroscopy and microscopy. We tried to handle the samples consistently so that any observed differences were more likely to reflect material behaviour rather than preparation differences.
 
