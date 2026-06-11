@@ -1,6 +1,5 @@
-# SOLARSAFE Report
+# Mirha_SOLARSAFE_findings
 
-*Converted from Mirha Kashif's SOLARSAFE report PDF.*
 
 ---
 
