@@ -1,4 +1,4 @@
-# SOLARSAFE Materials Team — GM2 2025
+# SOLARSAFE Materials Team — GM2 2026
 
 ## Introduction
 
