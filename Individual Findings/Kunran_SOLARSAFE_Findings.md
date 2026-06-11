@@ -425,12 +425,6 @@ references/literature_review_table.md
 
 
 
-
-| Source                                                                                                                                                                                              | Crop/product                                               | Materials         | Method                                                         | Key finding                                                                                                  | Relevance to SOLARSAFE                                                                                                   |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ----------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| Macri et al. (2021), *The Occurrence of Aflatoxins in Nuts and Dry Nuts Packed in Four Different Plastic Packaging from the Romanian Market*                                                        | 64 ready-packed nuts and dried fruits from Romanian market | LDPE, PP, PE, PET | Immunoaffinity cleanup + RIDASCREEN FAST ELISA                 | Total aflatoxins highest in LDPE, followed by PP, PE, and lowest in PET; most PET samples had AfB1 < 1 µg/kg | Used as screening evidence to deprioritise LDPE and suggest PE/PET as future comparators                                 |
-| John et al. (2019), *The effects of different packaging materials, temperatures and water activities to control aflatoxin B1 production by Aspergillus flavus and A. parasiticus in stored peanuts* | Inoculated stored peanut kernels                           | LDPE, PP, PELA    | Storage under controlled temperature/water activity + HPLC-FLD | Highest AFB1 detected in LDPE, followed by PP; PELA reduced or prevented AFB1 under some conditions          | Reinforced decision to deprioritise LDPE and showed that moisture/water activity must be considered with material choice |
-
 ## Strengths
 
 * The project narrowed a broad aflatoxin-control problem into a specific material-selection question.
@@ -445,13 +439,10 @@ references/literature_review_table.md
 ## Limitations
 
 * The sodium hypochlorite experiment was short-term and does not prove long-term durability.
-* The ATR-FTIR spectra were low-signal because thin film samples did not always make good contact with the ATR crystal.
 * Some ATR-FTIR spectra had to be retaken because weak sample contact or small air gaps at the ATR interface could distort the signal.
-* The ATR-FTIR data are useful for detecting obvious degradation markers, but should not be used for confident quantitative peak-height claims.
 * The profilometer was unavailable, so surface roughness and pitting could not be quantified.
 * The microscope images were mainly qualitative and did not show clear surface differences.
 * The CO2 sensor saturated at 9999 ppm, so the true maximum CO2 concentration inside the maize bags could not be measured.
-* The bags were opened on Day 3, so later humidity and CO2 readings should be interpreted as post-ventilation values rather than purely sealed-bag behaviour.
 * No direct aflatoxin-retention experiment was performed.
 * The literature reviewed was mainly from nuts, dried fruits and peanuts rather than maize, so it should be treated as screening evidence rather than direct proof for SOLARSAFE.
 * Nylon results were less conclusive because of the weaker ATR-FTIR signal and its moisture absorption concern.
