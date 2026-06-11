@@ -6,7 +6,7 @@ SOLARSAFE is a solar-powered maize dryer for smallholder farmers in Kenya and su
 
 ## Project goal
 
-Find a bag material that: withstands NaOCl cleaning, retains high internal moisture during drying, is transparent, low cost, and durable.
+Find a bag material that: withstands NaOCl cleaning, reduces aflatoxin trapping, retains high internal moisture during drying, is transparent, low cost, and durable.
 
 ## Materials evaluated
 
