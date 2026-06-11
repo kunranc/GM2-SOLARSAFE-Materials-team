@@ -348,11 +348,7 @@ The current recommendation is:
 
 PVC is recommended because it combines short-term sodium hypochlorite compatibility with strong transparency, direct relevance to the current partner design, and the best headspace result among the three materials tested. In the maize-bag experiment, PVC reached the lowest peak humidity and accumulated CO2 more slowly than PP and Nylon, suggesting that it may be less prone to trapping moisture and gas when used in a drying context.
 
-PP remains a strong comparator because it also showed no detectable chemical or visible surface damage under sodium hypochlorite exposure and has advantages in cost, low moisture uptake and food-contact practicality. However, in the sealed maize-bag experiment PP trapped the most humidity and retained the most CO2 after opening, which is a disadvantage for drying unless ventilation is engineered into the bag. Nylon requires further testing because of weaker ATR-FTIR signal quality, high humidity build-up and its moisture absorption concern.
-
-This recommendation should not be treated as a final field-certified material choice. It is a first-stage material screen that gives the partner and future teams a practical starting point. The maize-bag result also makes one design requirement very clear: even with PVC, SOLARSAFE should not rely on a fully sealed drying bag. The next prototype should include an engineered moisture-escape path, such as vents, breathable panels, controlled opening, or solar-driven airflow.
-
-Before field adoption, the next team should verify PVC grade, food-contact suitability, plasticiser formulation, long-term sunlight ageing, mechanical durability and moisture behaviour under realistic drying conditions.
+It is a first-stage material screen that gives the partner and future teams a practical starting point. The maize-bag result also makes one design requirement very clear: even with PVC, SOLARSAFE should not rely on a fully sealed drying bag. Before field adoption, the next team should verify PVC grade, food-contact suitability, plastic composition, long-term sunlight ageing, and moisture behaviour under field conditions.
 
 ## Repository handover
 
