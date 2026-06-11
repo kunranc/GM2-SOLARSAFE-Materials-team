@@ -63,11 +63,15 @@ The materials were selected using four criteria.
 
 LDPE was removed from the first shortlist after the literature review suggested a stronger association with aflatoxin levels in plastic-packaged food samples. PE and PET were not rejected permanently, but moved to future work because the project timeframe required a smaller experimental set.
 
-Recommended supporting file:
+Relevant GitHub locations:
 
 ```text
-figures/material_selection_funnel.png
+references/literature_review_table.md
+interim
+Individual Findings
 ```
+
+The `references` file supports the literature-based material filtering, while `interim` records the earlier project scope and planning. The `Individual Findings` folder contains the individual material-selection write-up.
 
 ## Literature review and expert input
 
@@ -79,7 +83,7 @@ We also spoke to Gideon Darko, who had worked with aflatoxin testing in Ghana. H
 
 Gideon also introduced us to Aflasafe, a biocontrol product used to reduce aflatoxin risk before harvest. This was interesting because it addresses the problem earlier than our drying-bag material work. However, we learnt that Aspergillus strains differ between regions, so a product suitable for one country may not automatically work in another. For this reason, Aflasafe was treated as an important future direction rather than part of the main material experiment.
 
-Recommended supporting file:
+Relevant GitHub location:
 
 ```text
 references/literature_review_table.md
@@ -116,7 +120,13 @@ The way I used this paper in the project was:
 This literature review helped move the project away from choosing plastics only based on price or availability. It showed that the surface and storage behaviour of the material could matter for food safety, and this became one of the reasons our final material shortlist focused on PP, PVC and Nylon rather than including LDPE.
 
 
-## Experiment 1: maize-bag internal conditions study — humidity, CO2 and temperature monitoring
+## Experiment 2: maize-bag internal conditions study — humidity, CO2 and temperature monitoring
+
+This section corresponds to the GitHub folder:
+
+```text
+Experiment 2 - Moisture Exposure
+```
 
 ### Objective
 
@@ -141,16 +151,15 @@ We prepared three bags: one PP bag, one PVC bag and one Nylon bag. Each bag cont
 
 For each maize cob, we took four moisture readings. This was important because moisture can vary locally within the cob, so a single reading would not be reliable enough. After placing the maize and sensor inside each bag, we sealed the bags carefully with tape. Particular attention was given to the interface around the sensor and the bag opening, because leakage at this point would affect the CO2 and humidity readings. Although this was a small-scale laboratory setup, we tried to make the sealing method consistent across PP, PVC and Nylon.
 
-Recommended supporting files:
+Relevant GitHub locations:
 
 ```text
-figures/maize_bag_setup.png
-figures/headspace_humidity_by_material.png
-figures/headspace_humidity_change.png
-figures/headspace_co2_after_opening.png
-data/maize_bag_experiment/raw_readings.csv
-data/maize_bag_experiment/moisture_summary.csv
+Experiment 2 - Moisture Exposure/Experiment 2 set-up
+Experiment 2 - Moisture Exposure/Measurements.md
+Experiment 2 - Moisture Exposure/README.md
 ```
+
+The setup file documents how the bag experiment was prepared. `Measurements.md` contains the recorded humidity, CO2, temperature and moisture readings used for the results discussed below.
 
 ### Measurement timeline
 
@@ -225,7 +234,13 @@ Future teams should repeat the experiment with:
 * full time-series logging so that humidity and CO2 build-up rates can be calculated rather than only compared using summary values.
 
 
-## Experiment 2: sodium hypochlorite exposure and surface analysis
+## Experiment 1: sodium hypochlorite exposure and surface analysis
+
+This section corresponds to the GitHub folder:
+
+```text
+Experiment 1 - Sodium Hypochlorite Exposure
+```
 
 ### Objective
 
@@ -259,14 +274,15 @@ The experiment was therefore a before-vs-after comparison: a clean control film 
 
 Before measuring samples, we first collected a background measurement from the ATR-FTIR instrument. This background correction removed the impact of surrounding environment from the final spectrum. Each plastic sample was then placed onto the ATR crystal and measured. The spectra were saved as `.csv` files so that they could be plotted and compared later.
 
-Recommended supporting files:
+Relevant GitHub locations:
 
 ```text
-data/atr/raw/
-data/atr/processed/
-figures/ATR_results_PP_PVC_Nylon.png
-protocols/NaOCl_ATR_protocol.md
+Experiment 1 - Sodium Hypochlorite Exposure/Experiment 1 set-up
+Experiment 1 - Sodium Hypochlorite Exposure/ATR Data
+Experiment 1 - Sodium Hypochlorite Exposure/README.md
 ```
+
+The setup file describes the sodium hypochlorite exposure procedure. The `ATR Data` folder contains the spectroscopy outputs used to compare treated and untreated plastic surfaces.
 
 ### ATR-FTIR measurement quality
 
@@ -298,12 +314,14 @@ For microscopy, we examined all samples visually. We adjusted the microscope foc
 
 This was a useful workaround, but it was still less precise than using a calibrated microscope scale or profilometer.
 
-Recommended supporting files:
+Relevant GitHub locations:
 
 ```text
-figures/microscope_PP_PVC_Nylon.png
-protocols/microscope_protocol.md
+Experiment 1 - Sodium Hypochlorite Exposure/Microscope Data
+Experiment 1 - Sodium Hypochlorite Exposure/Experiment 1 set-up
 ```
+
+The microscope observations are stored under the `Microscope Data` folder. Where no separate protocol file is shown in the repository view, the experiment setup file should be used as the method reference.
 
 
 ### Overall interpretation
@@ -352,78 +370,70 @@ It is a first-stage material screen that gives the partner and future teams a pr
 
 ## Repository handover
 
-The following files should be included in the repository so that future teams can continue the work.
-
-### Main report
+The report refers to the following GitHub folders and files, based on the repository structure shown in the screenshots. Where the repository view does not show a specific file, the folder name is given instead.
 
 ```text
-www/material-selection-and-surface-testing-kunran.md
+README.md
+Experiment 1 - Sodium Hypochlorite Exposure/
+  ATR Data/
+  Microscope Data/
+  Experiment 1 set-up
+  README.md
+Experiment 2 - Moisture Exposure/
+  Experiment 2 set-up
+  Measurements.md
+  README.md
+Individual Findings/
+interim/
+references/
+  literature_review_table.md
 ```
 
-This file should contain the main individual report.
-
-### Raw and processed data
+### Individual findings
 
 ```text
-data/atr/raw/
-data/atr/processed/
-data/atr/ATR_quality_notes.md
-data/maize_bag_experiment/
+Individual Findings
 ```
 
-These folders should include raw ATR `.csv` files, processed ATR summaries, ATR quality notes, and maize-bag CO2/humidity/moisture readings.
+This folder should contain the individual findings write-up and any personal contribution summaries. My report should be placed here or linked from this folder so that it is separate from the shared experiment folders.
 
-Suggested ATR file names:
+### Experiment 1: sodium hypochlorite exposure
 
 ```text
-PP_control.csv
-PP_NaOCl_day3.csv
-PVC_control.csv
-PVC_NaOCl_day3.csv
-Nylon_control.csv
-Nylon_NaOCl_day3.csv
+Experiment 1 - Sodium Hypochlorite Exposure/Experiment 1 set-up
+Experiment 1 - Sodium Hypochlorite Exposure/ATR Data
+Experiment 1 - Sodium Hypochlorite Exposure/Microscope Data
+Experiment 1 - Sodium Hypochlorite Exposure/README.md
 ```
 
-Suggested maize-bag data files:
+These locations support the sodium hypochlorite experiment. `Experiment 1 set-up` documents the exposure procedure, `ATR Data` stores the ATR-FTIR spectroscopy outputs, and `Microscope Data` stores the surface images or observations. The experiment README should be used as the top-level explanation for this part of the work.
+
+### Experiment 2: moisture exposure
 
 ```text
-raw_readings.csv
-moisture_summary.csv
+Experiment 2 - Moisture Exposure/Experiment 2 set-up
+Experiment 2 - Moisture Exposure/Measurements.md
+Experiment 2 - Moisture Exposure/README.md
 ```
 
-### Figures
+These locations support the maize-bag internal-condition experiment. `Experiment 2 set-up` explains how the PP, PVC and Nylon bags were prepared, while `Measurements.md` contains the humidity, CO2, temperature and maize moisture readings used in the analysis.
 
-```text
-figures/material_selection_funnel.png
-figures/ATR_results_PP_PVC_Nylon.png
-figures/microscope_PP_PVC_Nylon.png
-figures/maize_bag_setup.png
-figures/moisture_CO2_result.png
-```
-
-Figures should be linked inside the Markdown report using:
-
-```markdown
-![ATR results](../figures/ATR_results_PP_PVC_Nylon.png)
-```
-
-### Protocols
-
-```text
-protocols/NaOCl_ATR_protocol.md
-protocols/microscope_protocol.md
-protocols/maize_bag_CO2_moisture_protocol.md
-```
-
-These should describe exactly how the experiments were performed so that another team can repeat them.
-
-### References
+### Literature review
 
 ```text
 references/literature_review_table.md
 ```
 
+This file contains the literature review table used to justify the material-selection logic, especially the removal of LDPE from the first experimental shortlist and the recommendation to keep PE and PET as future comparators.
 
+### Interim work and project-level notes
+
+```text
+interim
+README.md
+```
+
+The `interim` folder records the earlier project scope, planning and interim-stage material direction. The root `README.md` should be used as the main entry point for the repository so that future teams can understand how the experiment folders, references and individual findings connect.
 
 ## Strengths
 
@@ -472,4 +482,3 @@ My individual work helped turn SOLARSAFE’s broad material-longevity problem in
 
 The sodium hypochlorite experiment supports this recommendation because no candidate was ruled out by short-term bleach resistance: ATR-FTIR showed no detectable chemical degradation markers, and microscopy showed no visible surface damage. The maize-bag headspace experiment then made the material decision more practical: all sealed bags accumulated humidity and CO2, but PVC had the lowest peak humidity and slower CO2 build-up than PP and Nylon.
 
-The most important design lesson is that material choice alone does not solve drying. Even PVC still reached high humidity, so SOLARSAFE needs an engineered route for moisture to escape. The next stage should therefore focus on PVC prototype testing with controlled ventilation, longer ageing tests, improved ATR-FTIR/profilometry measurements, mechanical durability, and field trials in Kenya.
