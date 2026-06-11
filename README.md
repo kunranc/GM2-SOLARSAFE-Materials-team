@@ -25,16 +25,13 @@ LDPE was eliminated based on literature evidence of *Aspergillus* degradation.
 
 ## Project Website
 
-We created a simple project website to present the SOLARSAFE work in a more accessible and visual format.
+We created a public-facing website to present the SOLARSAFE materials work in a clearer and more visual format.
 
-The website summarises the project context, the aflatoxin problem, our material-selection focus, experimental approach, SDG alignment, and key team reflections.
+The website summarises the project context, the aflatoxin problem, our material-selection focus, SDG alignment, project management reflection, challenges, and future exploration.
 
-Open the website here:
-https://kunranc.github.io/GM2-SOLARSAFE-Materials-team/solarsafe_site/
-
-* [View the SOLARSAFE Project Website](https://kunranc.github.io/GM2-SOLARSAFE-Materials-team/solarsafe_site/)
-
-> Note: the website link will only work after the `solarsafe_site/` folder has been uploaded to the repository and GitHub Pages has been enabled.
+- [View the SOLARSAFE Project Website](https://kunranc.github.io/GM2-SOLARSAFE-Materials-team/Individual%20Findings/solarsafe_site/)
+- [Website source code](./Individual%20Findings/solarsafe_site/index.html)
+- [GitHub Repository](https://github.com/kunranc/GM2-SOLARSAFE-Materials-team)
 
 ## Repository Structure
 
