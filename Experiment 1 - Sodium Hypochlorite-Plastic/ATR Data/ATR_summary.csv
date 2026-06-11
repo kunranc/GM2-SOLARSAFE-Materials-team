@@ -1,0 +1,13 @@
+material,condition,OH_peak_change,CO_peak_change,fingerprint_stable,notes
+PP,water_control,none,none,yes,Stable
+PP,3pct_NaOCl,none,none,yes,No degradation
+PP,5pct_NaOCl,none,none,yes,No degradation
+PP,5pct_NaOCl_heat,none,none,yes,No degradation
+PVC,water_control,none,none,yes,Stable
+PVC,3pct_NaOCl,none,none,yes,No degradation
+PVC,5pct_NaOCl,none,none,yes,No degradation
+PVC,5pct_NaOCl_heat,none,none,yes,No degradation
+Nylon,water_control,none,none,yes,Weak signal
+Nylon,3pct_NaOCl,~3pct_drift,none,yes,Minor drift - inconclusive
+Nylon,5pct_NaOCl,none,none,yes,Inconclusive
+Nylon,5pct_NaOCl_heat,none,none,yes,Inconclusive
