@@ -168,7 +168,6 @@ The clearest result was the rapid rise in relative humidity in every bag:
 | PVC | 66.8% | 88.5% | +21.7 percentage points | 66.5% | -22.0 percentage points |
 | Nylon | 56.2% | 94.1% | +37.9 percentage points | 67.5% | -26.6 percentage points |
 
-![Headspace humidity by material](../figures/headspace_humidity_by_material.png)
 
 This is an important result for SOLARSAFE. The maize cobs were releasing moisture, but in a sealed bag that moisture accumulated in the headspace instead of escaping. A drying bag should remove moisture from the maize environment; a sealed bag of any of these polymers risks doing the opposite by creating a near-saturated microclimate.
 
@@ -176,7 +175,6 @@ The material ranking was also informative. PP reached the highest humidity at **
 
 The Day 3 opening was especially useful. After the bags were opened, humidity fell from **88.5% to 66.5%** in PVC and from **94.1% to 67.5%** in Nylon. PP also fell, but only from **96.7% to 87.8%**, meaning it remained very humid even after ventilation. This is consistent with PP behaving as the most moisture-trapping bag in our experiment.
 
-![Humidity build-up and drop after opening](../figures/headspace_humidity_change.png)
 
 The key conclusion from the humidity data is that moisture leaves the headspace only when there is an escape path. Passive sealing alone does not dry the maize. Therefore, SOLARSAFE needs ventilation, breathable panels, controlled opening, or a solar-driven airflow path so that evaporated water is carried out rather than trapped around the maize.
 
@@ -192,7 +190,6 @@ PP and Nylon reached the sensor ceiling of **9999 ppm within 24 hours**. PVC acc
 | PVC | Rose more slowly and saturated later | 994 ppm | 1402 ppm lower than PP |
 | Nylon | Reached sensor ceiling of 9999 ppm within 24 hours | 834 ppm | 1562 ppm lower than PP |
 
-![CO2 after opening bags on Day 3](../figures/headspace_co2_after_opening.png)
 
 The post-opening CO2 values show the same broad pattern as humidity. PP retained the most gas after opening: **2396 ppm**, compared with **994 ppm** for PVC and **834 ppm** for Nylon. This means PP retained about **2.4 times** as much CO2 as PVC and about **2.9 times** as much CO2 as Nylon after opening.
 
