@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLARSAFE Materials Team | GM2 2025</title>
+  <meta name="description" content="SOLARSAFE Materials Team GM2 2025: material selection for safer maize drying, aflatoxin risk reduction, SDG alignment, and project reflection based on the uploaded project document." />
+  <style>
+    :root {
+      --forest: #0f3d32;
+      --forest-2: #164f42;
+      --green: #2f9e78;
+      --mint: #bfe8d6;
+      --light-mint: #effaf4;
+      --cream: #fff8e6;
+      --gold: #f2c94c;
+      --amber: #e8a93a;
+      --terracotta: #d9824b;
+      --ink: #1f2d2a;
+      --muted: #5f706b;
+      --line: rgba(47, 158, 120, 0.18);
+      --white: #ffffff;
+      --shadow: 0 22px 60px rgba(15, 61, 50, 0.16);
+      --soft-shadow: 0 14px 35px rgba(15, 61, 50, 0.10);
+      --radius-xl: 34px;
+      --radius-lg: 24px;
+      --radius-md: 16px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(191, 232, 214, 0.85), transparent 34rem),
+        radial-gradient(circle at 85% 22%, rgba(242, 201, 76, 0.20), transparent 26rem),
+        linear-gradient(180deg, #fbfff9 0%, #f6fbf4 48%, #fff8e6 100%);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    p { margin-top: 0; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(18px);
+      background: rgba(255, 255, 255, 0.80);
+      border-bottom: 1px solid rgba(47, 158, 120, 0.14);
+    }
+
+    .nav {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      color: var(--forest);
+      letter-spacing: -0.03em;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      color: var(--forest);
+      background: linear-gradient(135deg, var(--gold), #e7ffd6 58%, var(--mint));
+      box-shadow: 0 10px 25px rgba(47, 158, 120, 0.18);
+      font-size: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+      color: var(--muted);
+      font-size: 0.91rem;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover { color: var(--green); }
+
+    .nav-links .repo-button {
+      color: var(--white);
+      background: linear-gradient(135deg, var(--forest), var(--green));
+      padding: 9px 14px;
+      border-radius: 999px;
+      box-shadow: 0 12px 24px rgba(47, 158, 120, 0.20);
+      border: 1px solid rgba(255, 255, 255, 0.38);
+    }
+
+    .nav-links .repo-button:hover {
+      color: var(--white);
+      transform: translateY(-1px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 86px 0 72px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -20% -10% auto auto;
+      width: 720px;
+      height: 720px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(47, 158, 120, 0.18), transparent 65%);
+      pointer-events: none;
+    }
+
+    .wrap,
+    .section,
+    .footer-inner {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(47, 158, 120, 0.12);
+      color: var(--forest);
+      font-size: 0.82rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 22px 0 18px;
+      font-size: clamp(2.7rem, 7vw, 6.6rem);
+      line-height: 0.94;
+      letter-spacing: -0.08em;
+      color: var(--forest);
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--green);
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      color: #3e544e;
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      margin: 0 0 26px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border-radius: 999px;
+      padding: 13px 20px;
+      font-weight: 900;
+      border: 1px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+
+    .button.primary {
+      color: var(--white);
+      background: linear-gradient(135deg, var(--forest), var(--green));
+      box-shadow: 0 18px 35px rgba(47, 158, 120, 0.24);
+    }
+
+    .button.secondary {
+      color: var(--forest);
+      background: rgba(255, 255, 255, 0.72);
+      border-color: rgba(47, 158, 120, 0.20);
+    }
+
+    .visual-card {
+      position: relative;
+      min-height: 470px;
+      padding: 26px;
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(239, 250, 244, 0.90)),
+        radial-gradient(circle at top right, rgba(242, 201, 76, 0.35), transparent 12rem);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid rgba(47, 158, 120, 0.16);
+    }
+
+    .sun {
+      position: absolute;
+      top: 34px;
+      right: 38px;
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 18px rgba(242, 201, 76, 0.16), 0 0 75px rgba(242, 201, 76, 0.55);
+    }
+
+    .container-illustration {
+      position: absolute;
+      left: 50%;
+      bottom: 34px;
+      width: 78%;
+      height: 280px;
+      transform: translateX(-50%);
+    }
+
+    .dryer {
+      position: absolute;
+      inset: 82px 0 0;
+      border-radius: 46% 46% 28px 28px / 56% 56% 28px 28px;
+      background:
+        linear-gradient(155deg, rgba(255, 255, 255, 0.74), rgba(117, 200, 165, 0.34)),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.55) 0 12px, rgba(255,255,255,0.22) 12px 24px);
+      border: 5px solid rgba(15, 61, 50, 0.42);
+      box-shadow: inset 0 30px 50px rgba(255, 255, 255, 0.42), 0 35px 55px rgba(15, 61, 50, 0.18);
+      overflow: hidden;
+    }
+
+    .maize-bed {
+      position: absolute;
+      left: 8%;
+      right: 8%;
+      bottom: 20px;
+      height: 74px;
+      border-radius: 999px;
+      background:
+        radial-gradient(circle at 10% 42%, #e9b93e 0 8px, transparent 9px),
+        radial-gradient(circle at 22% 60%, #f5cf61 0 9px, transparent 10px),
+        radial-gradient(circle at 34% 44%, #dca82f 0 8px, transparent 9px),
+        radial-gradient(circle at 47% 65%, #f6d665 0 9px, transparent 10px),
+        radial-gradient(circle at 58% 40%, #e9b93e 0 8px, transparent 9px),
+        radial-gradient(circle at 70% 58%, #f5cf61 0 9px, transparent 10px),
+        radial-gradient(circle at 82% 44%, #dca82f 0 8px, transparent 9px),
+        linear-gradient(180deg, #e2a534, #b87425);
+      box-shadow: inset 0 16px 25px rgba(255, 249, 220, 0.38);
+    }
+
+    .sensor {
+      position: absolute;
+      width: 62px;
+      height: 88px;
+      border-radius: 18px;
+      background: var(--forest);
+      color: var(--cream);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      font-size: 0.77rem;
+      font-weight: 900;
+      box-shadow: 0 17px 30px rgba(15, 61, 50, 0.20);
+    }
+
+    .sensor.one { left: 13%; bottom: 128px; transform: rotate(-7deg); }
+    .sensor.two { right: 14%; bottom: 118px; transform: rotate(8deg); }
+
+    .air-bubble {
+      position: absolute;
+      border-radius: 999px;
+      background: rgba(47, 158, 120, 0.14);
+      border: 1px solid rgba(47, 158, 120, 0.14);
+    }
+
+    .bubble-a { width: 74px; height: 74px; left: 18px; top: 35px; }
+    .bubble-b { width: 42px; height: 42px; left: 72px; top: 120px; }
+    .bubble-c { width: 60px; height: 60px; right: 132px; top: 145px; }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 34px;
+    }
+
+    .stat-card {
+      padding: 18px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(47, 158, 120, 0.16);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .stat-card strong {
+      display: block;
+      color: var(--forest);
+      font-size: 1.55rem;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: 7px;
+    }
+
+    .stat-card span {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .section { padding: 76px 0; }
+
+    .section-header {
+      max-width: 850px;
+      margin-bottom: 28px;
+    }
+
+    .section-kicker {
+      margin: 0 0 8px;
+      color: var(--green);
+      font-weight: 950;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    h2 {
+      margin: 0;
+      color: var(--forest);
+      font-size: clamp(2rem, 4vw, 3.55rem);
+      line-height: 1.03;
+      letter-spacing: -0.06em;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      color: var(--forest);
+      font-size: 1.2rem;
+      letter-spacing: -0.03em;
+    }
+
+    h4 {
+      margin: 0 0 8px;
+      color: var(--forest);
+      font-size: 1rem;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin: 14px 0 0;
+      max-width: 850px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 0.94fr 1.06fr;
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    .three-col,
+    .materials-grid,
+    .sdg-grid,
+    .challenge-grid,
+    .future-grid,
+    .results-grid,
+    .method-grid,
+    .repo-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .three-col,
+    .materials-grid,
+    .challenge-grid,
+    .future-grid,
+    .results-grid { grid-template-columns: repeat(3, 1fr); }
+    .sdg-grid { grid-template-columns: repeat(4, 1fr); }
+    .method-grid { grid-template-columns: repeat(2, 1fr); }
+    .repo-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .panel,
+    .material-card,
+    .sdg-card,
+    .challenge-card,
+    .future-card,
+    .result-card,
+    .method-card,
+    .repo-card {
+      padding: 26px;
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(47, 158, 120, 0.15);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .panel.tint,
+    .result-card.dark {
+      background: linear-gradient(145deg, rgba(15, 61, 50, 0.97), rgba(47, 158, 120, 0.95));
+      color: var(--cream);
+      border: none;
+    }
+
+    .panel.tint h3,
+    .panel.tint h4,
+    .panel.tint .mini-title,
+    .result-card.dark h3,
+    .result-card.dark strong { color: var(--white); }
+    .panel.tint p,
+    .panel.tint li,
+    .result-card.dark p,
+    .result-card.dark li { color: rgba(255, 248, 230, 0.88); }
+
+    .wide-panel {
+      margin-top: 22px;
+      padding: 30px;
+      border-radius: var(--radius-xl);
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--line);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .icon-list,
+    .clean-list {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0 0;
+      display: grid;
+      gap: 14px;
+    }
+
+    .icon-list li {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 12px;
+      align-items: start;
+      color: #435b55;
+    }
+
+    .clean-list li {
+      padding-left: 20px;
+      position: relative;
+      color: var(--muted);
+    }
+
+    .clean-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--green);
+    }
+
+    .icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      background: rgba(47, 158, 120, 0.13);
+      color: var(--forest);
+    }
+
+    .solution-flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .flow-step {
+      position: relative;
+      padding: 18px;
+      min-height: 158px;
+      border-radius: 20px;
+      background: var(--light-mint);
+      border: 1px solid rgba(47, 158, 120, 0.16);
+    }
+
+    .flow-step:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      top: 50%;
+      right: -16px;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--white);
+      display: grid;
+      place-items: center;
+      color: var(--green);
+      font-weight: 950;
+      box-shadow: 0 8px 18px rgba(47, 158, 120, 0.14);
+      z-index: 1;
+    }
+
+    .step-number {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      background: var(--forest);
+      color: var(--cream);
+      font-weight: 950;
+    }
+
+    .flow-step p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+
+    .material-chip,
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--light-mint);
+      color: var(--forest);
+      font-weight: 950;
+    }
+
+    .tag.gold { background: rgba(242, 201, 76, 0.24); }
+    .tag.dark { background: rgba(15, 61, 50, 0.10); }
+
+    .material-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 5px rgba(47, 158, 120, 0.13);
+    }
+
+    .mini-title {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--forest);
+      font-weight: 950;
+    }
+
+    .muted { color: var(--muted); }
+
+    .meter {
+      height: 9px;
+      margin: 16px 0 0;
+      border-radius: 999px;
+      background: rgba(47, 158, 120, 0.13);
+      overflow: hidden;
+    }
+
+    .meter span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--gold), var(--green));
+    }
+
+    .comparison {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.76);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .comparison th,
+    .comparison td {
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid rgba(47, 158, 120, 0.14);
+      vertical-align: top;
+    }
+
+    .comparison th {
+      color: var(--forest);
+      background: rgba(191, 232, 214, 0.55);
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .comparison td { color: var(--muted); }
+    .comparison tr:last-child td { border-bottom: none; }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 23px;
+      top: 16px;
+      bottom: 16px;
+      width: 2px;
+      background: rgba(47, 158, 120, 0.22);
+    }
+
+    .timeline-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .timeline-dot {
+      width: 48px;
+      height: 48px;
+      border-radius: 18px;
+      background: var(--green);
+      color: var(--white);
+      display: grid;
+      place-items: center;
+      font-weight: 950;
+      box-shadow: 0 14px 28px rgba(47, 158, 120, 0.25);
+      z-index: 1;
+    }
+
+    .timeline-card {
+      padding: 22px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.80);
+      border: 1px solid rgba(47, 158, 120, 0.14);
+    }
+
+    .timeline-card p { margin: 0; color: var(--muted); }
+
+    .sdg-number {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      font-weight: 950;
+      color: var(--forest);
+      background: linear-gradient(135deg, var(--gold), var(--mint));
+    }
+
+    .challenge-card strong,
+    .future-card strong,
+    .result-card strong,
+    .method-card strong {
+      display: block;
+      color: var(--forest);
+      margin-bottom: 9px;
+      font-size: 1.05rem;
+    }
+
+    .quote-panel {
+      margin-top: 36px;
+      padding: 34px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, var(--cream), rgba(191, 232, 214, 0.72));
+      border: 1px solid rgba(47, 158, 120, 0.15);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .quote-panel p {
+      margin: 0;
+      color: var(--forest);
+      font-size: clamp(1.25rem, 2.5vw, 2rem);
+      line-height: 1.25;
+      letter-spacing: -0.04em;
+      font-weight: 900;
+    }
+
+    details {
+      margin-top: 22px;
+      padding: 20px 22px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(47, 158, 120, 0.16);
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 950;
+      color: var(--forest);
+    }
+
+    details p { color: var(--muted); margin-bottom: 0; }
+
+    .footer {
+      padding: 44px 0 58px;
+      background: var(--forest);
+      color: rgba(255, 255, 255, 0.78);
+      margin-top: 70px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer strong { color: var(--white); }
+
+    .top-link {
+      color: var(--forest);
+      background: var(--cream);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 950;
+    }
+
+    code {
+      padding: 2px 6px;
+      border-radius: 7px;
+      background: rgba(47, 158, 120, 0.12);
+      color: var(--forest);
+      font-weight: 700;
+    }
+
+    @media (max-width: 1020px) {
+      .hero-grid,
+      .two-col { grid-template-columns: 1fr; }
+      .stat-row,
+      .sdg-grid,
+      .method-grid,
+      .repo-grid { grid-template-columns: repeat(2, 1fr); }
+      .solution-flow,
+      .materials-grid,
+      .challenge-grid,
+      .future-grid,
+      .results-grid,
+      .three-col { grid-template-columns: 1fr; }
+      .flow-step:not(:last-child)::after { display: none; }
+      .visual-card { min-height: 410px; }
+    }
+
+    @media (max-width: 720px) {
+      .nav { align-items: flex-start; }
+      .nav-links { display: none; }
+      .hero { padding-top: 56px; }
+      .stat-row,
+      .sdg-grid,
+      .method-grid,
+      .repo-grid { grid-template-columns: 1fr; }
+      .panel,
+      .material-card,
+      .sdg-card,
+      .challenge-card,
+      .future-card,
+      .result-card,
+      .method-card,
+      .repo-card { padding: 22px; }
+      .container-illustration { width: 92%; }
+      .sensor { transform: scale(0.85); }
+      .footer-inner { align-items: flex-start; }
+      .comparison { font-size: 0.92rem; }
+      .comparison th, .comparison td { padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="SOLARSAFE home">
+        <span class="brand-mark">☀</span>
+        <span>SOLARSAFE Materials Team</span>
+      </a>
+      <div class="nav-links" aria-label="Page links">
+        <a href="#context">Context</a>
+        <a href="#solarsafe">SolarSafe</a>
+        <a href="#challenges">Challenges</a>
+        <a href="#reflection">Reflection</a>
+        <a href="#future">Future</a>
+        <a class="repo-button" href="https://github.com/kunranc/GM2-SOLARSAFE-Materials-team" target="_blank" rel="noopener">GitHub repo ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">GM2 2025 · Crop safety · Kenya · Materials selection</span>
+          <h1 id="hero-title">Improving crop safety <span>through better drying materials.</span></h1>
+          <p class="hero-copy">
+            SolarSafe is a project supporting smallholder farmers in Kenya through improved crop drying and storage technologies. Our materials-focused contribution investigated how plastic material choice can influence the internal drying environment, cleaning durability, and long-term usefulness of solar-powered drying containers.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#context">Explore the context →</a>
+            <a class="button secondary" href="#reflection">Read the team reflection</a>
+            <a class="button secondary" href="https://github.com/kunranc/GM2-SOLARSAFE-Materials-team" target="_blank" rel="noopener">Open GitHub repo ↗</a>
+          </div>
+
+          <div class="stat-row" aria-label="Project highlights">
+            <div class="stat-card"><strong>14%</strong><span>approximate maize moisture target or below</span></div>
+            <div class="stat-card"><strong>3</strong><span>flexible plastic materials examined</span></div>
+            <div class="stat-card"><strong>4</strong><span>SDGs connected to the work</span></div>
+            <div class="stat-card"><strong>20+</strong><span>outreach emails for lab support</span></div>
+          </div>
+        </div>
+
+        <div class="visual-card" aria-label="Illustration of a solar drying container with maize and internal sensing">
+          <div class="sun" aria-hidden="true"></div>
+          <div class="air-bubble bubble-a" aria-hidden="true"></div>
+          <div class="air-bubble bubble-b" aria-hidden="true"></div>
+          <div class="air-bubble bubble-c" aria-hidden="true"></div>
+          <div class="container-illustration" aria-hidden="true">
+            <div class="dryer"></div>
+            <div class="maize-bed"></div>
+            <div class="sensor one">H₂O<br>CO₂</div>
+            <div class="sensor two">BAG<br>TEST</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="context" aria-labelledby="context-title">
+      <div class="section-header">
+        <p class="section-kicker">01 · Improving crop safety</p>
+        <h2 id="context-title">Aflatoxin contamination affects health, food safety, and farmer income.</h2>
+        <p class="lead">
+          Across many regions of the Global South, smallholder farmers face challenges that extend far beyond crop production itself. One significant problem is contamination of staple crops such as maize by aflatoxins, toxic compounds produced by fungi including <em>Aspergillus flavus</em>.
+        </p>
+      </div>
+
+      <div class="two-col">
+        <article class="panel tint">
+          <h3>Why aflatoxins matter</h3>
+          <ul class="icon-list">
+            <li><span class="icon">⚕</span><span>Exposure to aflatoxins can cause serious health problems in humans and livestock.</span></li>
+            <li><span class="icon">🌽</span><span>Contaminated crops may fail to meet food safety standards for local markets and international trade.</span></li>
+            <li><span class="icon">💷</span><span>Unsafe grain can create economic consequences for farming communities through crop losses and reduced market access.</span></li>
+            <li><span class="icon">🌧</span><span>Traditional open-air drying leaves crops vulnerable to rain, humidity, pests, and contamination.</span></li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3>The role of moisture</h3>
+          <p class="muted">
+            A major cause of aflatoxin contamination is excessive moisture during drying and storage. Research suggests that maize should be dried to approximately 14% moisture content or below to substantially reduce fungal growth and aflatoxin production.
+          </p>
+          <p class="muted">
+            Many farmers continue to rely on open-air drying methods. This creates a practical need for low-cost systems that provide a more controlled drying environment before long-term storage.
+          </p>
+          <div class="solution-flow" aria-label="Post-harvest flow">
+            <div class="flow-step"><span class="step-number">1</span><h3>Harvest</h3><p>Maize enters drying with variable moisture levels.</p></div>
+            <div class="flow-step"><span class="step-number">2</span><h3>Dry</h3><p>Moisture must be reduced before safe storage.</p></div>
+            <div class="flow-step"><span class="step-number">3</span><h3>Protect</h3><p>The crop should avoid rain, humidity, pests, and contamination.</p></div>
+            <div class="flow-step"><span class="step-number">4</span><h3>Store</h3><p>Safer drying supports longer-term food security.</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="solarsafe" aria-labelledby="solarsafe-title">
+      <div class="section-header">
+        <p class="section-kicker">02 · SolarSafe approach</p>
+        <h2 id="solarsafe-title">SolarSafe aims to make drying safer, more controlled, and more useful for farmers.</h2>
+        <p class="lead">
+          Working alongside Bernard and local engineers and scientists in Kenya, SolarSafe seeks to address aflatoxin risk through improved crop drying and storage technologies.
+        </p>
+      </div>
+
+      <div class="three-col">
+        <article class="panel">
+          <span class="tag">Controlled drying</span>
+          <h3>Low-cost solar-powered containers</h3>
+          <p class="muted">SolarSafe aims to help farmers achieve safer moisture levels before long-term storage using low-cost solar-powered drying containers.</p>
+        </article>
+        <article class="panel">
+          <span class="tag gold">Food safety</span>
+          <h3>Reducing contamination risk</h3>
+          <p class="muted">A more controlled drying environment has the potential to reduce crop losses and improve food safety by limiting conditions that favour fungal growth.</p>
+        </article>
+        <article class="panel">
+          <span class="tag dark">Economic resilience</span>
+          <h3>Supporting farming communities</h3>
+          <p class="muted">Safer drying and storage can help farmers protect harvest value and improve resilience within farming communities.</p>
+        </article>
+      </div>
+
+      <div class="wide-panel">
+        <h3>Our contribution</h3>
+        <p class="muted">
+          Our team focused on understanding how material selection influences the performance and durability of SolarSafe drying systems. We investigated whether different plastic materials could affect environmental conditions within the container that are associated with fungal growth. In particular, moisture levels and carbon dioxide concentrations provide indicators of the internal storage environment and can help identify conditions that may favour microbial activity.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="challenges" aria-labelledby="challenges-title">
+      <div class="section-header">
+        <p class="section-kicker">03 · Challenges and adaptations</p>
+        <h2 id="challenges-title">Practical constraints shaped the final experimental route.</h2>
+        <p class="lead">
+          The project required fast adaptation because the available time, laboratory access, and material procurement did not always match the original experimental ambition.
+        </p>
+      </div>
+
+      <div class="challenge-grid">
+        <article class="challenge-card">
+          <strong>Procurement delays</strong>
+          <p class="muted">Engineering-grade plastic materials were slow to arrive due to their specialised nature, which conflicted with the project deadline. The team adapted by using plastic bags made from the same target materials — PP, PVC, and nylon — to preserve the purpose of the experiment.</p>
+        </article>
+        <article class="challenge-card">
+          <strong>Laboratory access</strong>
+          <p class="muted">Arranging laboratory access and supervision for chemical exposure testing was another challenge. The team conducted extensive outreach, including more than 20 emails to different departments, laboratories, and academics, before securing support in the plastics lab.</p>
+        </article>
+        <article class="challenge-card">
+          <strong>Aflatoxin complexity</strong>
+          <p class="muted">Directly testing aflatoxin production or fungal adhesion would have required specialist equipment, safety procedures, and more time than the project allowed. Therefore, this area was treated primarily as a research component while experimental work focused on material durability and chemical resistance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="reflection" aria-labelledby="reflection-title">
+      <div class="section-header">
+        <p class="section-kicker">04 · Project management and team reflection</p>
+        <h2 id="reflection-title">The team narrowed a broad problem into a focused materials investigation.</h2>
+        <p class="lead">
+          The project management strategy was based on dividing work clearly while maintaining flexibility. In the first week, the wider team split into mechanics and materials sub-teams because different members wanted to explore different aspects of SolarSafe.
+        </p>
+      </div>
+
+      <div class="timeline" aria-label="Project reflection timeline">
+        <article class="timeline-item">
+          <div class="timeline-dot">1</div>
+          <div class="timeline-card"><h3>Team structure</h3><p>The smaller materials team meant that each person had to take on more responsibility, while also gaining wider exposure to literature review, experimental design, procurement, risk assessment, and laboratory preparation.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-dot">2</div>
+          <div class="timeline-card"><h3>Selecting the research focus</h3><p>The team initially considered heating, drying conditions, oxygen and moisture control, fungal contamination, and bag materials. After discussion with Benard and review of the post-harvest process, the team settled on bag materials as a practical and relevant focus.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-dot">3</div>
+          <div class="timeline-card"><h3>Expert consultation</h3><p>Rich Stutt guided the team towards relevant plant epidemiology literature. Gideon Darko advised on possible experimental set-ups, including moisture measurement using a John Deere device and aflatoxin quantification using Reveal Q. Eugene Terentjev supported the plastics lab work and helped make chemical exposure testing more realistic.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-dot">4</div>
+          <div class="timeline-card"><h3>Shared responsibilities</h3><p>Kunran focused on aflatoxin research, material selection, and procurement searches. Mirha focused on sodium hypochlorite research, experimental design, and risk assessments. Both members contributed to outreach, literature review, and end-to-end experimental pipelines.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="future" aria-labelledby="future-title">
+      <div class="section-header">
+        <p class="section-kicker">05 · Future exploration</p>
+        <h2 id="future-title">Future work could expand the material range and test the internal environment in more detail.</h2>
+        <p class="lead">
+          If more time had been available, the project could have extended beyond chemical exposure testing and examined more realistic internal conditions inside drying bags.
+        </p>
+      </div>
+
+      <div class="future-grid">
+        <article class="future-card"><strong>Oxygen and moisture distribution</strong><p class="muted">Future work could use multiple sensors to compare how different materials affect oxygen and moisture distribution inside the bags over time.</p></article>
+        <article class="future-card"><strong>Aflasafe pathway</strong><p class="muted">Aflasafe could be explored as a potential future biocontrol strategy for Kenya, particularly for preventing pre-harvest infection before the drying stage.</p></article>
+        <article class="future-card"><strong>More candidate materials</strong><p class="muted">Other materials, such as PE and PET, would also be valuable candidates for testing.</p></article>
+      </div>
+
+      <div class="quote-panel">
+        <p>The project demonstrated the importance of narrowing the scope early, contacting experts quickly, and preparing contingency plans for procurement and laboratory access.</p>
+      </div>
+    </section>
+
+    <section class="section" id="conclusion" aria-labelledby="conclusion-title">
+      <div class="section-header">
+        <p class="section-kicker">06 · Key lesson</p>
+        <h2 id="conclusion-title">Simple engineering decisions can support safer crop drying technologies.</h2>
+        <p class="lead">
+          By contributing evidence-based material selection to SolarSafe, the work supports the development of safer crop drying technologies for smallholder farmers. More broadly, it highlights how material selection can address challenges at the intersection of food security, public health, and sustainable development.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <strong>SOLARSAFE Materials Team — GM2 2025</strong><br />
+        Website content adapted only from the uploaded project document.
+      </div>
+      <a class="top-link" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
