@@ -245,20 +245,19 @@ This washing and drying step was important because remaining liquid could affect
 
 ### ATR-FTIR: what we were looking for
 
-The first analysis method was ATR-FTIR spectroscopy. ATR-FTIR is useful here because it samples only the near-surface region of the film, typically on the order of the top 1--2 µm depending on the material and wavenumber. This is the region where chemical attack would be expected to start.
+The first analysis method was ATR-FTIR spectroscopy. ATR-FTIR is useful here because it samples only the near-surface region of the film. This is the region where chemical attack would be expected to start.
 
 If sodium hypochlorite were oxidising or degrading the polymer, we expected to see one or more diagnostic changes:
 
 | Diagnostic feature | Why it matters |
 |---|---|
 | New carbonyl band around 1700--1740 cm⁻¹ | C=O formation is a common sign of oxidation and chain scission. |
-| Broad hydroxyl/O-H band around 3200--3500 cm⁻¹ | This may indicate introduced hydroxyl groups, hydrolysis, oxidation or water uptake. |
+| Broad hydroxyl/O-H band around 3200--3500 cm⁻¹ | This may indicate introduced hydroxyl groups, hydrolysis, or oxidation. |
 | PVC-specific changes near the C-Cl region around 600--700 cm⁻¹ | This could indicate changes to the PVC backbone or C-Cl bonding environment. |
-| Growth of conjugated C=C/polyene bands in PVC | This may accompany dehydrochlorination and bleach-induced discolouration. |
 
 The experiment was therefore a before-vs-after comparison: a clean control film and a bleach-soaked film should look similar unless the surface chemistry has changed.
 
-Before measuring samples, we first collected a background measurement from the ATR-FTIR instrument. This background correction removed the contribution of the instrument and surrounding environment from the final spectrum. Each plastic sample was then placed onto the ATR crystal and measured. The spectra were saved as `.csv` files so that they could be plotted and compared later.
+Before measuring samples, we first collected a background measurement from the ATR-FTIR instrument. This background correction removed the impact of surrounding environment from the final spectrum. Each plastic sample was then placed onto the ATR crystal and measured. The spectra were saved as `.csv` files so that they could be plotted and compared later.
 
 Recommended supporting files:
 
@@ -271,13 +270,11 @@ protocols/NaOCl_ATR_protocol.md
 
 ### ATR-FTIR measurement quality
 
-This part of the experiment was more difficult than expected. Across the three polymers and both sodium hypochlorite concentrations, the spectra often sat on a low, noisy baseline at the milli-absorbance level. The strong polymer fingerprint peaks that would normally be expected were weak or partly lost in noise. For example, the expected CH stretching features of PP, the amide I/II bands of Nylon, and the CH₂/C-Cl features of PVC were not always as sharp or intense as they would be in an ideal ATR-FTIR measurement.
+This part of the experiment was more difficult than expected. The strong polymer fingerprint peaks that would normally be expected were weak or partly lost in noise. 
 
-Instead, some spectra showed a large baseline rise or dip below roughly 1200--1300 cm⁻¹, and some also showed atmospheric water-vapour features around 1900--2200 cm⁻¹. We interpreted this mainly as a measurement artefact rather than evidence of polymer chemistry. Thin and slightly curled film offcuts do not always press flat onto the ATR crystal, so optical contact can be poor. When contact is poor, the effective signal becomes weak and the low-wavenumber region can be distorted.
+Some spectra showed a large baseline rise or dip below roughly 1200--1300 cm⁻¹, and some also showed atmospheric water-vapour features around 1900--2200 cm⁻¹. We interpreted this mainly as a measurement artefact rather than evidence of polymer chemistry. Sometimes curled film offcuts do not always press flat onto the ATR crystal, so optical contact can be poor. When contact is poor, the effective signal becomes weaker.
 
-For this reason, some samples were measured more than once. If the first graph looked unusual or inconsistent with the expected polymer fingerprint, we repeated the measurement and tried to improve sample contact. Some heat runs were also attempted to soften or flatten film samples and improve contact with the ATR crystal. This helped slightly, but it did not fully remove the low-signal problem.
-
-This quality issue is important for future interpretation. The ATR-FTIR data are useful for identifying whether obvious degradation markers appeared, but they should not be used for confident quantitative peak-height comparisons.
+For this reason, some samples were measured more than once. If the first graph looked unusual or inconsistent with the expected polymer fingerprint, we repeated the measurement and tried to improve sample contact. This quality issue is important for future interpretation. The ATR-FTIR data are useful for identifying whether obvious degradation markers appeared, but they should not be used for confident quantitative peak-height comparisons.
 
 ### ATR-FTIR results
 
@@ -291,7 +288,7 @@ The key findings were:
 | PVC | No new carbonyl/hydroxyl damage features, no obvious loss in the C-Cl region, and no clear polyene growth | No detectable dehydrochlorination, oxidation or bleach-related surface breakdown. |
 | Nylon | No clear new carbonyl/hydroxyl degradation feature, but the signal was weaker and noisier | No evidence of degradation, but repeat testing would strengthen confidence. |
 
-The honest interpretation is therefore two-part. First, the data quality is limited because the films did not always make ideal contact with the ATR crystal. Second, within the detection limit of the spectra we collected, there was no evidence that three days in 3--5% sodium hypochlorite chemically degraded PP, PVC or Nylon. No clear oxidation products, chain-scission markers, hydrolysis markers or PVC dehydrochlorination signatures were detected.
+We have two conclusions. First, the data quality is limited because the films did not always make ideal contact with the ATR crystal. Second, within the detection limit of the spectra we collected, there was no evidence that three days in 3--5% sodium hypochlorite chemically degraded PP, PVC or Nylon. 
 
 ### Microscopy
 
@@ -308,11 +305,6 @@ figures/microscope_PP_PVC_Nylon.png
 protocols/microscope_protocol.md
 ```
 
-### Microscopy results
-
-Under optical microscopy, the bleach-exposed surfaces did not show substantial differences from the controls. We did not observe obvious micro-cracking, crazing, pitting, etching, frosting, loss of gloss, or visible discolouration in PP, PVC or Nylon at the tested concentrations.
-
-This result should be interpreted carefully. Optical microscopy shows surface morphology, not molecular chemistry. It would catch visible cracking, pitting or discolouration, but it cannot detect early molecular-scale oxidation as sensitively as ATR-FTIR. Its value here is therefore corroboration: ATR-FTIR looked for surface chemical changes, while microscopy looked for physical surface damage. Both methods suggested the same conclusion under our short test conditions: sodium hypochlorite did not cause detectable surface damage.
 
 ### Overall interpretation
 
@@ -320,7 +312,7 @@ The experiment provided two complementary types of evidence. ATR-FTIR gave the m
 
 This means none of the three candidates should be ruled out on sodium hypochlorite resistance alone. The final material choice should therefore depend on other design requirements, including transparency, food-contact suitability, moisture behaviour, cost, local availability, manufacturability and relevance to the partner design.
 
-For our final recommendation, this supports choosing **PVC** as the lead material for the next SOLARSAFE prototype because it survived the sodium hypochlorite screen, is transparent, and is directly relevant to the current partner design. **PP** remains a strong comparator because it also survived the chemical screen and has advantages in cost, low moisture uptake and food-contact practicality. **Nylon** remains possible but needs further testing because of its weaker ATR signal and higher moisture absorption concern.
+For our final recommendation, this supports choosing **PVC** as the lead material for the next SOLARSAFE prototype because it survived the sodium hypochlorite screen, is transparent, and is directly relevant to the current partner design. 
 
 The important caveat is that the ATR-FTIR signal quality was limited. If a formal degradation claim is needed, the measurement should be repeated with flatter coupons, stronger and more reproducible crystal contact, replicate samples, and ideally profilometry or mechanical testing.
 
@@ -332,11 +324,8 @@ Future teams should repeat and strengthen this experiment with:
 * at least three replicate samples per material and condition;
 * clearly recorded sodium hypochlorite concentration and exposure time;
 * flatter film cut-outs or heat-flattened coupons to improve ATR-FTIR contact;
-* careful ATR crystal pressure and repeated spectra when the signal is weak;
 * profilometry to quantify roughness, pitting and surface topography;
 * calibrated microscopy images;
-* mass, transparency and flexibility measurements before and after exposure;
-* simple tensile or flexural testing, because brittleness may appear before obvious visible damage;
 * UV or heat ageing to better represent solar-dryer conditions.
 
 The most useful next improvement would be to combine ATR-FTIR with profilometry and a simple mechanical test. ATR-FTIR would show whether surface chemistry changed, profilometry would show whether the physical surface became rougher or damaged, and mechanical testing would show whether the material became more brittle after exposure.
