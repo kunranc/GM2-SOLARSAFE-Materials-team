@@ -12,6 +12,15 @@ Find a bag material that: withstands NaOCl cleaning, reduces aflatoxin trapping,
 
 PVC, PP, and Nylon were shortlisted. LDPE was eliminated based on literature evidence of Aspergillus degradation.
 
+## Project Website
+
+We created a simple project website to present the SOLARSAFE work in a more accessible and visual format.  
+The website summarises the project context, the aflatoxin problem, our material-selection focus, experimental approach, SDG alignment, and key team reflections.
+
+Open the website here:
+
+- [SOLARSAFE Project Website](./solarsafe_site/index.html)
+
 ## Repository structure
 
 
