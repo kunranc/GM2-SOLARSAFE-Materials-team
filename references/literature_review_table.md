@@ -1,15 +1,23 @@
 # Literature Review: Aflatoxin and Plastic Packaging
 
-| Reference | Year | Key finding | Relevance to SOLARSAFE |
-|-----------|------|-------------|------------------------|
-| Macri et al., *Microorganisms* | 2021 | Aflatoxin levels highest in LDPE, lowest in PET across 64 retail nut/dried-fruit products | LDPE eliminated from material shortlist |
-| Macri et al. | 2021 | PP second highest aflatoxin; PE intermediate; PET lowest | PE and PET identified as future comparators |
-| General knowledge | - | *Aspergillus* degrades LDPE under storage conditions | Confirms LDPE elimination |
+| Reference                                                          | Year | Key finding                                                                                                                                                                                             | Relevance to SOLARSAFE                                                                                                                                                       |
+| ------------------------------------------------------------------ | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Macri et al., *Microorganisms*                                     | 2021 | 64 retail nut and dried-fruit samples packed in LDPE, PP, PE and PET were analysed. Total aflatoxin levels were highest in LDPE, followed by PP, PE and PET.                                            | Supports eliminating LDPE from the material shortlist and treating PET/PE as useful future comparators.                                                                      |
+| Macri et al., *Microorganisms*                                     | 2021 | PET showed the lowest aflatoxin B1 concentrations, while LDPE was most associated with contamination.                                                                                                   | Suggests that packaging material can influence aflatoxin risk during storage, although the study examined retail storage rather than solar drying.                           |
+| Shakerardekani and Karim, *Journal of Food Science and Technology* | 2013 | In pistachio nuts stored under high humidity, increased moisture content was associated with higher aflatoxin levels. All tested films except LDPE delayed moisture absorption and aflatoxin formation. | Supports evaluating plastics not only for aflatoxin residue but also for moisture barrier performance. This is directly relevant to SOLARSAFE drying-bag material selection. |
+| Shakerardekani and Karim, *Journal of Food Science and Technology* | 2013 | PET performed best, followed by nylon, PA/PP and PVC for maintaining pistachio quality and safety during storage.                                                                                       | Supports including nylon and PVC in material testing, while identifying PET as a future comparison material if more time is available.                                       |
+| Omar et al., *Foods*                                               | 2020 | HPLC and ELISA methods were validated for detecting and quantifying aflatoxins in food samples including wheat, corn, dried fig and dried coffee beans.                                                 | Provides methodological support for future SOLARSAFE work if aflatoxin levels are directly measured after material exposure or storage tests.                                |
 
 ## Summary
 
-Only one primary source was reviewed in depth due to time constraints. The Macri et al. (2021) study examined retail storage conditions, not active solar drying. PE and PET comparators were not tested in lab experiments but are recommended for future work.
+Three sources were reviewed for the material-selection literature base. Macri et al. (2021) provides the most directly relevant comparison between LDPE, PP, PE and PET in retail nut and dried-fruit packaging, showing that LDPE had the highest aflatoxin levels while PET had the lowest. Shakerardekani and Karim (2013) adds storage-based evidence from pistachio nuts, showing that moisture uptake is linked to aflatoxin formation and that LDPE performed poorly compared with PET, nylon, PA/PP and PVC. Omar et al. (2020) supports the use of HPLC and ELISA as future analytical methods for quantifying aflatoxins.
 
-## Citation
+Overall, the literature supports removing LDPE from the material shortlist and prioritising PP, PVC and nylon for the current SOLARSAFE experiments. PE and PET were not tested in our lab work due to time and procurement constraints, but both should be considered as future comparator materials, especially PET given its consistently low aflatoxin results in the reviewed literature.
 
-Macri A, et al. (2021). The Occurrence of Aflatoxins in Nuts and Dry Nuts Packed in Four Different Plastic Packaging from the Romanian Market. *Microorganisms*, 9(6), 1157.
+## References
+
+Macri, A.M., Pop, I., Simeanu, D., Toma, D., Sandu, I., Pavel, L.L. and Mintas, O.S. (2021) ‘The Occurrence of Aflatoxins in Nuts and Dry Nuts Packed in Four Different Plastic Packaging from the Romanian Market’, *Microorganisms*, 9(1), p. 61.
+
+Omar, S.S., Haddad, M.A. and Parisi, S. (2020) ‘Validation of HPLC and Enzyme-Linked Immunosorbent Assay (ELISA) Techniques for Detection and Quantification of Aflatoxins in Different Food Samples’, *Foods*, 9(5), p. 661.
+
+Shakerardekani, A. and Karim, R. (2013) ‘Effect of Different Types of Plastic Packaging Films on the Moisture and Aflatoxin Contents of Pistachio Nuts During Storage’, *Journal of Food Science and Technology*, 50(2), pp. 409–411.
