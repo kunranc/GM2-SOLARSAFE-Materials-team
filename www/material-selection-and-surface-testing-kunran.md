@@ -19,7 +19,7 @@ SOLARSAFE aims to make maize drying safer, more controlled, and more reusable be
 
 > Which plastic is most suitable for a reusable maize drying bag?
 
-The current recommendation is to prioritise **PVC** for the next SOLARSAFE drying-bag prototype, while keeping **PP** as an important comparator and testing **Nylon** further before making a firm conclusion.
+The current recommendation is to prioritise **PVC** for the next SOLARSAFE drying-bag prototype, while keeping **PP** as a strong comparator and testing **Nylon** further before making a firm conclusion.
 
 ## Scope development
 
@@ -207,19 +207,30 @@ The tested materials were:
 
 > **PP, PVC and Nylon**
 
+The practical question was not whether sodium hypochlorite makes any visible difference immediately, but whether it creates early surface chemistry or surface morphology changes that would make a material unsuitable for repeated use.
+
 ### Exposure and sample handling
 
 The exposure stage was mainly prepared by Mirha. Plastic samples were placed in sodium hypochlorite solutions for the planned exposure period. During the plastic-lab session, we removed the samples from the solutions, rinsed them carefully and dried them before analysis.
 
-This washing and drying step was important because remaining liquid could affect both ATR spectroscopy and microscopy. We tried to handle the samples consistently so that any observed differences were more likely to reflect material behaviour rather than preparation differences.
+This washing and drying step was important because remaining liquid could affect both ATR-FTIR spectroscopy and microscopy. We tried to handle the samples consistently so that any observed differences were more likely to reflect material behaviour rather than preparation differences.
 
-### ATR spectroscopy
+### ATR-FTIR: what we were looking for
 
-The first analysis method was ATR spectroscopy. The purpose of ATR was to detect whether sodium hypochlorite exposure had caused chemical changes at the plastic surface.
+The first analysis method was ATR-FTIR spectroscopy. ATR-FTIR is useful here because it samples only the near-surface region of the film, typically on the order of the top 1--2 µm depending on the material and wavenumber. This is the region where chemical attack would be expected to start.
 
-Before measuring samples, we collected a background measurement from the ATR instrument. This background correction removed the contribution of the instrument and surrounding environment from the final spectrum. After that, each plastic sample was placed onto the ATR crystal and measured. The spectra were saved as `.csv` files so they could be plotted and compared later.
+If sodium hypochlorite were oxidising or degrading the polymer, we expected to see one or more diagnostic changes:
 
-For most samples, we collected at least one ATR spectrum. Some samples were measured more than once because the first graph looked unusual or inconsistent with the expected polymer fingerprint. A likely reason was imperfect contact between the plastic and the ATR crystal. If the sample was not pressed flat enough, or if there were small air gaps at the interface, the signal could become weak or distorted. Part of the work was therefore identifying unreliable spectra and deciding which measurements needed to be repeated.
+| Diagnostic feature | Why it matters |
+|---|---|
+| New carbonyl band around 1700--1740 cm⁻¹ | C=O formation is a common sign of oxidation and chain scission. |
+| Broad hydroxyl/O-H band around 3200--3500 cm⁻¹ | This may indicate introduced hydroxyl groups, hydrolysis, oxidation or water uptake. |
+| PVC-specific changes near the C-Cl region around 600--700 cm⁻¹ | This could indicate changes to the PVC backbone or C-Cl bonding environment. |
+| Growth of conjugated C=C/polyene bands in PVC | This may accompany dehydrochlorination and bleach-induced discolouration. |
+
+The experiment was therefore a before-vs-after comparison: a clean control film and a bleach-soaked film should look similar unless the surface chemistry has changed.
+
+Before measuring samples, we first collected a background measurement from the ATR-FTIR instrument. This background correction removed the contribution of the instrument and surrounding environment from the final spectrum. Each plastic sample was then placed onto the ATR crystal and measured. The spectra were saved as `.csv` files so that they could be plotted and compared later.
 
 Recommended supporting files:
 
@@ -230,18 +241,33 @@ figures/ATR_results_PP_PVC_Nylon.png
 protocols/NaOCl_ATR_protocol.md
 ```
 
-The ATR interpretation rule was:
+### ATR-FTIR measurement quality
 
-| Spectral observation                            | Possible interpretation                          |
-| ----------------------------------------------- | ------------------------------------------------ |
-| Spectrum mostly unchanged                       | Material likely stable under short exposure      |
-| New/stronger O-H or N-H region around 3300 cm-1 | Possible oxidation, hydrolysis or absorbed water |
-| New carbonyl region around 1715 cm-1            | Possible oxidative degradation                   |
-| Major fingerprint-region changes                | Possible polymer surface change                  |
+This part of the experiment was more difficult than expected. Across the three polymers and both sodium hypochlorite concentrations, the spectra often sat on a low, noisy baseline at the milli-absorbance level. The strong polymer fingerprint peaks that would normally be expected were weak or partly lost in noise. For example, the expected CH stretching features of PP, the amide I/II bands of Nylon, and the CH₂/C-Cl features of PVC were not always as sharp or intense as they would be in an ideal ATR-FTIR measurement.
+
+Instead, some spectra showed a large baseline rise or dip below roughly 1200--1300 cm⁻¹, and some also showed atmospheric water-vapour features around 1900--2200 cm⁻¹. We interpreted this mainly as a measurement artefact rather than evidence of polymer chemistry. Thin and slightly curled film offcuts do not always press flat onto the ATR crystal, so optical contact can be poor. When contact is poor, the effective signal becomes weak and the low-wavenumber region can be distorted.
+
+For this reason, some samples were measured more than once. If the first graph looked unusual or inconsistent with the expected polymer fingerprint, we repeated the measurement and tried to improve sample contact. Some heat runs were also attempted to soften or flatten film samples and improve contact with the ATR crystal. This helped slightly, but it did not fully remove the low-signal problem.
+
+This quality issue is important for future interpretation. The ATR-FTIR data are useful for identifying whether obvious degradation markers appeared, but they should not be used for confident quantitative peak-height comparisons.
+
+### ATR-FTIR results
+
+Despite the weak signal, the diagnostic windows for chemical attack were still informative. Across PP, PVC and Nylon, at both tested sodium hypochlorite concentrations, we did not observe the spectral signatures that would indicate clear polymer degradation.
+
+The key findings were:
+
+| Material | ATR-FTIR result after short NaOCl exposure | Interpretation |
+|---|---|---|
+| PP | No new carbonyl band around 1715--1740 cm⁻¹ and no broad hydroxyl band around 3200--3500 cm⁻¹ | No detectable oxidation or hydrolysis within the limits of this test. |
+| PVC | No new carbonyl/hydroxyl damage features, no obvious loss in the C-Cl region, and no clear polyene growth | No detectable dehydrochlorination, oxidation or bleach-related surface breakdown. |
+| Nylon | No clear new carbonyl/hydroxyl degradation feature, but the signal was weaker and noisier | No evidence of degradation, but repeat testing would strengthen confidence. |
+
+The honest interpretation is therefore two-part. First, the data quality is limited because the films did not always make ideal contact with the ATR crystal. Second, within the detection limit of the spectra we collected, there was no evidence that three days in 3--5% sodium hypochlorite chemically degraded PP, PVC or Nylon. No clear oxidation products, chain-scission markers, hydrolysis markers or PVC dehydrochlorination signatures were detected.
 
 ### Microscopy
 
-After ATR analysis, we tried to use a profilometer to quantify surface roughness and possible physical damage. This would have been useful because profilometry can measure roughness, pitting and topography more quantitatively. However, the profilometer was not working and could not be repaired within the available time. We therefore used optical microscopy as an alternative.
+After ATR-FTIR analysis, we tried to use a profilometer to quantify surface roughness and possible physical damage. This would have been useful because profilometry can measure roughness, pitting and topography more quantitatively. However, the profilometer was not working and could not be repaired within the available time. We therefore used optical microscopy as an alternative.
 
 For microscopy, we examined all samples visually. We adjusted the microscope focus and magnification so that the sample surfaces could be compared as consistently as possible. To estimate the scale of the microscope images, we used a practical calibration method: we measured the diameter of a hair using a micrometer and then placed the hair under the microscope. This gave us a reference object with a known approximate size, allowing us to interpret the microscope images with some sense of scale.
 
@@ -254,57 +280,57 @@ figures/microscope_PP_PVC_Nylon.png
 protocols/microscope_protocol.md
 ```
 
-### Results
+### Microscopy results
 
-The ATR results suggested:
+Under optical microscopy, the bleach-exposed surfaces did not show substantial differences from the controls. We did not observe obvious micro-cracking, crazing, pitting, etching, frosting, loss of gloss, or visible discolouration in PP, PVC or Nylon at the tested concentrations.
 
-| Material | Result after short NaOCl exposure   | Interpretation                      |
-| -------- | ----------------------------------- | ----------------------------------- |
-| PP       | No clear new damage peaks           | No obvious chemical attack          |
-| PVC      | No clear new damage peaks           | No obvious short-term breakdown     |
-| Nylon    | Weak/noisy signal with slight drift | Inconclusive; repeat testing needed |
+This result should be interpreted carefully. Optical microscopy shows surface morphology, not molecular chemistry. It would catch visible cracking, pitting or discolouration, but it cannot detect early molecular-scale oxidation as sensitively as ATR-FTIR. Its value here is therefore corroboration: ATR-FTIR looked for surface chemical changes, while microscopy looked for physical surface damage. Both methods suggested the same conclusion under our short test conditions: sodium hypochlorite did not cause detectable surface damage.
 
-The microscope images did not show clear or dramatic visual differences between treated and untreated samples. The surfaces did not appear to change significantly, and it was difficult to identify obvious cracking, pitting or surface damage from microscopy alone.
+### Overall interpretation
 
-### Interpretation
+The experiment provided two complementary types of evidence. ATR-FTIR gave the more chemistry-focused evidence, while microscopy gave visual surface evidence. Both were screening methods, and both had limitations, but together they support the conclusion that **3--5% sodium hypochlorite exposure over three days did not produce detectable chemical or visible surface damage in PP, PVC or Nylon**.
 
-The experiment provided two levels of evidence. ATR gave the stronger evidence because it could detect possible surface chemical changes. Microscopy gave supporting visual evidence, but it was less sensitive and less quantitative.
+This means none of the three candidates should be ruled out on sodium hypochlorite resistance alone. The final material choice should therefore depend on other design requirements, including transparency, food-contact suitability, moisture behaviour, cost, local availability, manufacturability and relevance to the partner design.
 
-The main conclusion is that PP and PVC appear compatible with short sodium hypochlorite exposure under our test conditions. Nylon should not be rejected, but the result was less reliable and should be repeated.
+For our final recommendation, this supports choosing **PVC** as the lead material for the next SOLARSAFE prototype because it survived the sodium hypochlorite screen, is transparent, and is directly relevant to the current partner design. **PP** remains a strong comparator because it also survived the chemical screen and has advantages in cost, low moisture uptake and food-contact practicality. **Nylon** remains possible but needs further testing because of its weaker ATR signal and higher moisture absorption concern.
 
-The absence of obvious changes after three days does not prove long-term durability. It only supports PP and PVC as stronger first-round candidates.
+The important caveat is that the ATR-FTIR signal quality was limited. If a formal degradation claim is needed, the measurement should be repeated with flatter coupons, stronger and more reproducible crystal contact, replicate samples, and ideally profilometry or mechanical testing.
 
 ### Future improvements
 
-Future teams should repeat the experiment with:
+Future teams should repeat and strengthen this experiment with:
 
 * longer exposure times, such as 7, 14 and 28 days;
 * at least three replicate samples per material and condition;
 * clearly recorded sodium hypochlorite concentration and exposure time;
-* careful ATR sample contact and repeated spectra when the signal is weak;
+* flatter film cut-outs or heat-flattened coupons to improve ATR-FTIR contact;
+* careful ATR crystal pressure and repeated spectra when the signal is weak;
 * profilometry to quantify roughness, pitting and surface topography;
 * calibrated microscopy images;
 * mass, transparency and flexibility measurements before and after exposure;
+* simple tensile or flexural testing, because brittleness may appear before obvious visible damage;
 * UV or heat ageing to better represent solar-dryer conditions.
 
-The most useful next improvement would be to combine ATR with profilometry. ATR would show whether the surface chemistry changed, while profilometry would show whether the physical surface became rougher or damaged.
+The most useful next improvement would be to combine ATR-FTIR with profilometry and a simple mechanical test. ATR-FTIR would show whether surface chemistry changed, profilometry would show whether the physical surface became rougher or damaged, and mechanical testing would show whether the material became more brittle after exposure.
+
 
 ## Final material recommendation
 
 The current recommendation is:
 
-> **Use PP as the leading material candidate for the next SOLARSAFE drying-bag prototype, while continuing to compare it against PVC and Nylon in longer tests.**
+> **Use PVC as the leading material candidate for the next SOLARSAFE drying-bag prototype, while continuing to compare it against PP and Nylon in longer tests.**
 
-| Criterion                | PP                         | PVC                            | Nylon                   |
-| ------------------------ | -------------------------- | ------------------------------ | ----------------------- |
-| NaOCl resistance, 3 days | No clear degradation       | No clear degradation           | Inconclusive/noisy      |
-| Material integrity       | Stable candidate           | Strong, but may become brittle | Tough, may absorb water |
-| Practicality             | Low-cost, light, available | Transparent, moderate cost     | Heavier/costlier        |
-| Recommendation           | Best current candidate     | Useful comparator              | More testing needed     |
+| Criterion | PP | PVC | Nylon |
+|---|---|---|---|
+| NaOCl resistance, 3 days | No detectable chemical degradation in ATR-FTIR; no visible surface damage in microscopy | No detectable chemical degradation in ATR-FTIR; no visible surface damage in microscopy | No detectable degradation markers, but ATR-FTIR signal was weaker/noisier |
+| Material integrity | Stable candidate, light and practical | Strong and transparent; long-term ageing and food-contact grade should be checked | Tough, but may absorb moisture |
+| Practicality | Low-cost and strong comparator | Transparent and directly relevant to the current partner design | Heavier/costlier and less straightforward for moisture control |
+| Recommendation | Strong comparator | **Best current candidate** | More testing needed |
 
-PP is recommended because it offers the best balance of chemical resistance, material integrity, cost, weight and practical availability. PVC should remain as a comparator because it is relevant to the current partner design. Nylon requires further testing before it can be recommended.
+PVC is recommended because it combines short-term sodium hypochlorite compatibility with strong transparency and direct relevance to the current partner design. Transparency is important for a drying bag because it supports solar drying and allows visual inspection of the maize. PP remains a strong comparator because it also showed no detectable chemical or visible surface damage under our sodium hypochlorite test and has advantages in cost, low moisture uptake and food-contact practicality. Nylon requires further testing before it can be recommended.
 
-This is not a final field-certified material choice. It is a first-stage material screen that gives the partner and future teams a practical starting point.
+This recommendation should not be treated as a final field-certified material choice. It is a first-stage material screen that gives the partner and future teams a practical starting point. Before field adoption, the next team should verify PVC grade, food-contact suitability, plasticiser formulation, long-term sunlight ageing, mechanical durability and moisture behaviour under realistic drying conditions.
+
 
 ## Repository handover
 
@@ -323,10 +349,11 @@ This file should contain the main individual report.
 ```text
 data/atr/raw/
 data/atr/processed/
+data/atr/ATR_quality_notes.md
 data/maize_bag_experiment/
 ```
 
-These folders should include raw ATR `.csv` files, processed ATR summaries, and maize-bag CO2/humidity/moisture readings.
+These folders should include raw ATR `.csv` files, processed ATR summaries, ATR quality notes, and maize-bag CO2/humidity/moisture readings.
 
 Suggested ATR file names:
 
@@ -392,19 +419,22 @@ references/literature_review_table.md
 * The recommendation is based on partner needs, expert feedback, literature evidence and laboratory testing.
 * The literature review helped justify why LDPE was removed from the first experimental shortlist rather than simply choosing materials based on availability.
 * The maize-bag experiment showed that internal humidity and CO2 can rise quickly after sealing, so material choice should be evaluated together with ventilation and drying behaviour.
-* The plastic-lab work included both ATR spectroscopy and microscope observation, giving a stronger first screen than visual inspection alone.
+* The plastic-lab work included both ATR-FTIR spectroscopy and microscope observation, giving a stronger first screen than visual inspection alone.
+* The ATR-FTIR analysis checked the relevant diagnostic regions for oxidation, hydrolysis and PVC-specific degradation, rather than relying only on visual appearance.
 * The report and repository structure give future teams a clear starting point.
 
 ## Limitations
 
 * The sodium hypochlorite experiment was short-term and does not prove long-term durability.
-* Some ATR spectra had to be retaken because weak sample contact or small air gaps at the ATR interface could distort the signal.
+* The ATR-FTIR spectra were low-signal because thin film samples did not always make good contact with the ATR crystal.
+* Some ATR-FTIR spectra had to be retaken because weak sample contact or small air gaps at the ATR interface could distort the signal.
+* The ATR-FTIR data are useful for detecting obvious degradation markers, but should not be used for confident quantitative peak-height claims.
 * The profilometer was unavailable, so surface roughness and pitting could not be quantified.
 * The microscope images were mainly qualitative and did not show clear surface differences.
 * The CO2 sensor saturated at 9999 ppm, so the true maximum CO2 concentration inside the maize bags could not be measured.
 * No direct aflatoxin-retention experiment was performed.
 * The literature reviewed was mainly from nuts, dried fruits and peanuts rather than maize, so it should be treated as screening evidence rather than direct proof for SOLARSAFE.
-* Nylon results were inconclusive.
+* Nylon results were less conclusive because of the weaker ATR-FTIR signal and its moisture absorption concern.
 * Aflasafe was identified as an interesting future direction, but it was outside the scope of the material-focused project.
 
 ## Next steps
@@ -412,15 +442,25 @@ references/literature_review_table.md
 Future teams should:
 
 1. repeat the sodium hypochlorite test with longer exposure times and replicate samples;
-2. add UV, heat and mechanical ageing to better represent field use;
-3. perform folding, puncture and tensile tests after chemical exposure;
-4. use profilometry to quantify surface roughness and pitting;
-5. repeat the maize-bag experiment with a higher range CO2 sensor;
-6. test PE and PET as future comparators if time allows;
-7. investigate Aflasafe or other biocontrol options as a separate pre-harvest direction;
-8. run field validation in Kenya before final material adoption.
+2. improve ATR-FTIR measurement quality using flatter coupons, stronger contact and repeated scans;
+3. add UV, heat and mechanical ageing to better represent field use;
+4. perform folding, puncture, tensile or flexural tests after chemical exposure;
+5. use profilometry to quantify surface roughness and pitting;
+6. repeat the maize-bag experiment with a higher range CO2 sensor;
+7. build small PVC and PP prototype bags and test them with maize under sunlight;
+8. test PE and PET as future comparators if time allows;
+9. investigate Aflasafe or other biocontrol options as a separate pre-harvest direction;
+10. run field validation in Kenya before final material adoption.
 
 ## Final handover summary
+
+My individual work helped turn SOLARSAFE’s broad material longevity problem into a structured technical decision. The main output is the evidence based shortlist and recommendation:
+
+> **PVC should be prioritised for the next SOLARSAFE drying-bag prototype, with PP retained as a strong comparator and Nylon requiring further testing.**
+
+The sodium hypochlorite experiment supports this recommendation because no candidate was ruled out by short-term bleach resistance: ATR-FTIR showed no detectable chemical degradation markers, and microscopy showed no visible surface damage. The choice of PVC therefore comes from the wider design context: its transparency, current relevance to the partner design, and initial compatibility with sodium hypochlorite exposure. PP remains a strong comparator, while Nylon needs more testing.
+
+This work should be treated as a first-stage material screen, not a final material certification. The next stage should focus on longer ageing tests, improved ATR-FTIR/profilometry measurements, internal oxygen/moisture measurements, mechanical durability, and field trials in Kenya.
 
 My individual work helped turn SOLARSAFE’s broad material longevity problem into a structured technical decision. The main output is the evidence based shortlist and recommendation:
 
